@@ -328,8 +328,8 @@ window.oldVersion = [
         <a href="/archives/" class="navbar-link">归档</a>
     
     
-        <a href="/search" class="navbar-link">搜索</a>
     
+        <a href="/about/" class="navbar-link">About</a>
     
     
         <div class="dropdown dropdown-right">
@@ -627,7 +627,12 @@ window.lazyLoadOptions = {
     var copyrightNow = new Date().getFullYear();
     var copyrightContent = document.querySelector('span[data-year]')
     
-        copyrightContent.textContent = copyrightNow
+        copyrightSince = 2017;
+        if (copyrightSince === copyrightNow) {
+            copyrightContent.textContent = copyrightNow
+        } else {
+            copyrightContent.textContent = copyrightSince + ' - ' + copyrightNow
+        }
     
 
 
