@@ -64,7 +64,7 @@ window.oldVersion = [
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
 
 <!-- Title -->
-<title>7.1预装软件限制计划正式施行，MIUI或成先驱？ | pokon548&#39;s 博客</title>
+<title>（自编写应用）SELinux mode changer | pokon548&#39;s 博客</title>
 
 <!-- favicon -->
 <!-- Favicons -->
@@ -83,7 +83,8 @@ window.oldVersion = [
 <meta name="format-detection" content="telephone=no">
 
 <!-- Description -->
-<meta name="description" content="还记得去年国务院下发的“预装限制”令吗？与前天开始实行了哟好消息是，不少MIUI8体验版的米粉发现，包括“指南针”、“计算器”、“游戏”等不少非核心应用程序已经可以免root卸载，相信将在不久以后在正式版中出现。...">
+<meta name="description" content="这是我第一次涉足Android开发领域的作品，由于开发经验不足，可能会存在诸多问题，我会在后期更新。望诸位理解
+介绍：这是一个可以自动切换SELinux模式的程序，它会在每一次开机自启动并自动设置SELinux为p...">
 
 <!-- Keywords -->
 <meta name="keywords" content>
@@ -208,22 +209,23 @@ window.oldVersion = [
 
 
     <!-- ### The Open Graph & Twitter Card Protocol ### -->
-    <meta property="og:title" content="7.1预装软件限制计划正式施行，MIUI或成先驱？ | pokon548&#39;s 博客">
+    <meta property="og:title" content="（自编写应用）SELinux mode changer | pokon548&#39;s 博客">
 <meta property="og:site_name" content="pokon548&#39;s 博客">
 
 <meta property="og:locale" content="zh-CN">
 
-<meta property="og:url" content="https://pokon548.ink/2017/07/03/7-1预装软件限制计划正式施行，MIUI或成先驱？/">
+<meta property="og:url" content="https://pokon548.ink/2017/06/18/（自编写应用）SELinux-mode-changer/">
 <meta property="og:image" content="https://pokon548.ink/img/suka-favicon.ico">
 
-<meta property="og:description" content="还记得去年国务院下发的“预装限制”令吗？与前天开始实行了哟好消息是，不少MIUI8体验版的米粉发现，包括“指南针”、“计算器”、“游戏”等不少非核心应用程序已经可以免root卸载，相信将在不久以后在正式版中出现。...">
+<meta property="og:description" content="这是我第一次涉足Android开发领域的作品，由于开发经验不足，可能会存在诸多问题，我会在后期更新。望诸位理解
+介绍：这是一个可以自动切换SELinux模式的程序，它会在每一次开机自启动并自动设置SELinux为p...">
 
 <meta name="twitter:card" content="summary">
 
 
     <meta property="og:type" content="article">
-    <meta property="article:published_time" content="2017-07-03T01:12:35.000Z">
-    <meta property="article:modified_time" content="2017-07-03T01:12:35.000Z">
+    <meta property="article:published_time" content="2017-06-18T02:26:07.000Z">
+    <meta property="article:modified_time" content="2017-06-18T02:26:07.000Z">
     <meta property="article:author" content="pokon548">
     <meta property="og:article:tag" content> 
 
@@ -242,7 +244,7 @@ window.oldVersion = [
 
 
     <!-- ### Canonical link ### -->
-    <link rel="canonical" href="https://pokon548.ink/2017/07/03/7-1预装软件限制计划正式施行，MIUI或成先驱？/">
+    <link rel="canonical" href="https://pokon548.ink/2017/06/18/（自编写应用）SELinux-mode-changer/">
 
     <!-- ### Structured Data ### -->
     
@@ -252,22 +254,22 @@ window.oldVersion = [
 <script type="application/ld+json">
 {
     "@context": "http://schema.org",
-    "url": "https://pokon548.ink/2017/07/03/7-1预装软件限制计划正式施行，MIUI或成先驱？/",
+    "url": "https://pokon548.ink/2017/06/18/（自编写应用）SELinux-mode-changer/",
     "@type": "BlogPosting",
     "logo": "https://pokon548.ink/img/suka-favicon.ico",
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://pokon548.ink/2017/07/03/7-1预装软件限制计划正式施行，MIUI或成先驱？/"
+        "@id": "https://pokon548.ink/2017/06/18/（自编写应用）SELinux-mode-changer/"
     },
-    "headline": "7.1预装软件限制计划正式施行，MIUI或成先驱？ | pokon548&#39;s 博客",
+    "headline": "（自编写应用）SELinux mode changer | pokon548&#39;s 博客",
     
     "image": {
         "@type": "ImageObject",
         "url": "https://pokon548.ink/img/suka-favicon.ico"
     },
     
-    "datePublished": "2017-07-03T01:12:35.000Z",
-    "dateModified": "2019-08-07T18:18:11.437Z",
+    "datePublished": "2017-06-18T02:26:07.000Z",
+    "dateModified": "2019-08-07T18:20:21.165Z",
     "author": {
         "@type": "Person",
         "name": "pokon548",
@@ -293,7 +295,8 @@ window.oldVersion = [
     },
     
     "keywords": "",
-    "description": "还记得去年国务院下发的“预装限制”令吗？与前天开始实行了哟好消息是，不少MIUI8体验版的米粉发现，包括“指南针”、“计算器”、“游戏”等不少非核心应用程序已经可以免root卸载，相信将在不久以后在正式版中出现。..."
+    "description": "这是我第一次涉足Android开发领域的作品，由于开发经验不足，可能会存在诸多问题，我会在后期更新。望诸位理解
+介绍：这是一个可以自动切换SELinux模式的程序，它会在每一次开机自启动并自动设置SELinux为p..."
 }
 </script>
 
@@ -353,7 +356,7 @@ window.oldVersion = [
                 <!-- # Post Header Info # -->
                 <div class="card-header">
                     
-    <h1 class="card-title h3 mb-2">7.1预装软件限制计划正式施行，MIUI或成先驱？</h1>
+    <h1 class="card-title h3 mb-2">（自编写应用）SELinux mode changer</h1>
 
 
 
@@ -361,7 +364,7 @@ window.oldVersion = [
 <div class="post-header-info">
     <p class="post-header-info-left text-gray">
         <img class="author-thumb lazyload" data-src="/img/default_avatar.png" src="/img/suka-lazyload.gif" alt="pokon548's Avatar">
-        <span>2017-07-03</span>
+        <span>2017-06-18</span>
         
         
             <!-- Busuanzi Post Views -->
@@ -382,56 +385,56 @@ window.oldVersion = [
     <!-- Share Weibo -->
     
     <li class="menu-item">
-        <a href="http://service.weibo.com/share/share.php?appkey=&title=7.1预装软件限制计划正式施行，MIUI或成先驱？&url=https://pokon548.ink/2017/07/03/7-1预装软件限制计划正式施行，MIUI或成先驱？/&pic=https://pokon548.ink/img/suka-favicon.ico&searchPic=false&style=simple" target="_blank" rel="external noopener noreferrer nofollow">分享到微博</a>
+        <a href="http://service.weibo.com/share/share.php?appkey=&title=（自编写应用）SELinux mode changer&url=https://pokon548.ink/2017/06/18/（自编写应用）SELinux-mode-changer/&pic=https://pokon548.ink/img/suka-favicon.ico&searchPic=false&style=simple" target="_blank" rel="external noopener noreferrer nofollow">分享到微博</a>
     </li>
     
 
     <!-- Share Twitter -->
     
     <li class="menu-item">
-        <a href="https://twitter.com/intent/tweet?text=7.1预装软件限制计划正式施行，MIUI或成先驱？&url=https://pokon548.ink/2017/07/03/7-1预装软件限制计划正式施行，MIUI或成先驱？/&via=pokon548" target="_blank" rel="external noopener noreferrer nofollow">分享到 Twitter</a>
+        <a href="https://twitter.com/intent/tweet?text=（自编写应用）SELinux mode changer&url=https://pokon548.ink/2017/06/18/（自编写应用）SELinux-mode-changer/&via=pokon548" target="_blank" rel="external noopener noreferrer nofollow">分享到 Twitter</a>
     </li>
     
 
     <!-- Share Facebook -->
     
     <li class="menu-item">
-        <a href="https://www.facebook.com/sharer/sharer.php?u=https://pokon548.ink/2017/07/03/7-1预装软件限制计划正式施行，MIUI或成先驱？/" target="_blank" rel="external noopener noreferrer nofollow">分享到 Facebook</a>
+        <a href="https://www.facebook.com/sharer/sharer.php?u=https://pokon548.ink/2017/06/18/（自编写应用）SELinux-mode-changer/" target="_blank" rel="external noopener noreferrer nofollow">分享到 Facebook</a>
     </li>
     
 
     <!-- Share Google+ -->
     
     <li class="menu-item">
-        <a href="https://plus.google.com/share?url=https://pokon548.ink/2017/07/03/7-1预装软件限制计划正式施行，MIUI或成先驱？/" target="_blank" rel="external noopener noreferrer nofollow">分享到 Google+</a>
+        <a href="https://plus.google.com/share?url=https://pokon548.ink/2017/06/18/（自编写应用）SELinux-mode-changer/" target="_blank" rel="external noopener noreferrer nofollow">分享到 Google+</a>
     </li>
     
 
     <!-- Share LinkedIn -->
     
     <li class="menu-item">
-        <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://pokon548.ink/2017/07/03/7-1预装软件限制计划正式施行，MIUI或成先驱？/&title=pokon548's 博客" target="_blank" rel="external noopener noreferrer nofollow">分享到 LinkedIn</a>
+        <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://pokon548.ink/2017/06/18/（自编写应用）SELinux-mode-changer/&title=pokon548's 博客" target="_blank" rel="external noopener noreferrer nofollow">分享到 LinkedIn</a>
     </li>
     
 
     <!-- Share QQ -->
     
     <li class="menu-item">
-        <a href="http://connect.qq.com/widget/shareqq/index.html?site=pokon548's 博客&title=pokon548's 博客&summary=&pics=https://pokon548.ink/img/suka-favicon.ico&url=https://pokon548.ink/2017/07/03/7-1预装软件限制计划正式施行，MIUI或成先驱？/" target="_blank" rel="external noopener noreferrer nofollow"> 分享到 QQ</a>
+        <a href="http://connect.qq.com/widget/shareqq/index.html?site=pokon548's 博客&title=pokon548's 博客&summary=&pics=https://pokon548.ink/img/suka-favicon.ico&url=https://pokon548.ink/2017/06/18/（自编写应用）SELinux-mode-changer/" target="_blank" rel="external noopener noreferrer nofollow"> 分享到 QQ</a>
     </li>
     
 
     <!-- Share Telegram -->
     
     <li class="menu-item">
-        <a href="https://t.me/share/url?url=https://pokon548.ink/2017/07/03/7-1预装软件限制计划正式施行，MIUI或成先驱？/&text=pokon548's 博客" target="_blank" rel="external noopener noreferrer nofollow">分享到 Telegram</a>
+        <a href="https://t.me/share/url?url=https://pokon548.ink/2017/06/18/（自编写应用）SELinux-mode-changer/&text=pokon548's 博客" target="_blank" rel="external noopener noreferrer nofollow">分享到 Telegram</a>
     </li>
     
 
     <!-- QRCode -->
     
     <li class="menu-item">
-        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAAAAAAYplnuAAACqElEQVR42u3cQW7jQAxEUd3/0skqG0FkfVJykEDfmwTjsfxkgG52sZHj6x8+DtGiRYt+IfpoHpcvPD338/vVz+p6V/9OHKJFU3SFq/7P+Y069NWNnpHYIVr0AF1dpHvzCtP9XkGTQ7ToT6EpoLsh8pxo0Z9Ek4uTQq0WGNGiP4GuGhXSqHdgskl4vMsT/Xp0wvzWz8d246JfjY6hX3HRqvGpiqrbLDyemop+NZoGhl0QOQ1t0oa2/DBEiwboCWZagF1wQ8N7tLiIFl1sAlJxdWCySHUDJnTjokUDdLoAaZK6ouxenwq6/fYQLTpsbNOAvrsJCu+CHFLsokUTNH3j6UCTFFtavFbfHqJfj6YBYArAp4dSyMBVtOgtejponw7qp01S+SUgWjRE03AlNVW02EjTNQprRIsOAWQ6VEKHR/TASxeqixb9BHo73E+HWtIHEBcq0aIBOi0a9PAUPUQ4XahEi94UIvmSR8NJGKB3DVYXQooWTdDTDWcXHKY3JTeMB0WiRQP0NAwnA6G7m+ZYiKJFh0ERCQs3hZbCeBT8iBY9QD8RlKcGigToo4NXokUvAsgU2tBQhxwG7wpWtGiKToXWPU8KiB7cIgewRIum6PQicjB7sojQxQinpqJFNw3T3QIiTVQ3UEIHr0SLHhxSmRRm1diQzSspRtGi76K74uyAm0HTpChFi96gu2aeFigN6smQaDUoEi0abkzpRmBSjAd44OmWaNHDP7STNgQ0FEeb102oLlr08A/B00Pb0wMBJGxvQ3XRokMAScNDMjSlNzMpVNGip3tEfFhkELJsmqXyQxMt+iF0KlASPHaFSA7cihb9JDqFkQS3ObglWvQddArK7wSS2wZrvQkQ/Xo0aVwmoWNq6EkTFQtRtOhlPv2XHqJFixb9IvQ3PyT6+RSPFfMAAAAASUVORK5CYII=" alt="QRCode">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKQAAACkCAAAAAA83tqdAAACOElEQVR42u3c3W6DMAyGYe7/prvjVeT7AaZ28cvJ1o42DxIOjmPteP2D4wAJEiTIL0Ae4vj1gcVrde7ZOe/vqXFBzkWe3rQCeQZbAdV3uHFBzka+37jq/dV7q2BMgurs4kCCXCHVja/OTz8HEuTdwDlDrIIkmfRBgmwSjGVCGlyQAj+aBYHcDqkWRH/587HVIsitkLZoJPDRQEFQ3a6qgdwKqQZtEwiHU4u10wcAyNHIJEFwSYiDphcGEqQqxDtkOrh6GCwDEeRIZLKRlBZR7eQcTOYgQapkN5nE1blqMo8CCeRYZDJYmkSkQaSKViBnI5MNShdIbsGlLlZtGoCci5QnisQ2TW7Vd1WZOcgxyDuJryteJZuny7+BHIlMm0TcBJ5suCcJCUiQrtCpfneLrjRI4sZjkCOQcdNGWCB1jSJuIwskSNXE4RKHJmCaBj2Qs5FJ4poM5Dbd04Kt7foDOQ6ZbAQlDZvppqoMOJAjkaoZyRXi0ya6tEkKJMh2wZ4USdMCgcKDnI1Mm5TcTa8KXq4ge3kDFOTWSNdUfKUYkE7ecdILchSyaeBom5iahpMoukGOQKqBmsJoE2w2oECORF4NDlcoVYUt9dCoOlFBbomsbmSz6E8bT9KLBzkXeSVg0sm7Sa6rpBfk9khXxG8a6JqkoipYgQT58v/IrdnATzblQYJMkG4Sd59zRYBHAgfkdkhVtHJF/NXrplleNtSBHId0D363YZ80gDbng5yN/OYDJEiQID94/ABi13XkvtU7SQAAAABJRU5ErkJggg==" alt="QRCode">
     </li>
     
 
@@ -446,9 +449,10 @@ window.oldVersion = [
                         
                     
                     <article id="post-content">
-                        <p>还记得去年国务院下发的“预装限制”令吗？与前天开始实行了哟<br>好消息是，不少MIUI8体验版的米粉发现，包括“指南针”、“计算器”、“游戏”等不少非核心应用程序已经可以免root卸载，相信将在不久以后在正式版中出现。</p>
-<p>小米良心了一波~~手动点个赞</p>
-<p>（二次编辑内容）<br>当然，坏消息是，受限于优化限制，可能我们到8月份才能享受这个福利</p>
+                        <p>这是我第一次涉足Android开发领域的作品，由于开发经验不足，可能会存在诸多问题，我会在后期更新。望诸位理解</p>
+<p>介绍：这是一个可以自动切换SELinux模式的程序，它会在每一次开机自启动并自动设置SELinux为permissive模式。（需要没有优化软件阻止获取开机完成广播）<br>特殊要求：该软件需要root<br>大小：（仅APK）不足60K<br>用法：第一次开启是唯一需要你手动设置SELinux模式的时候，（打开获取root权限后即设置好）之后你就可以把这个APP放到你喜欢的文件夹里了，下次开机程序便会自动更改模式到permissive<br>Tips：由于先后顺序关系，该程序自启动可能较迟。如果一直没有看见Toast提示，请检查你的优化软件是否放行开机自启动权限</p>
+<p><img src="https://attach.bbs.miui.com/forum/201706/18/102531ydyd7smm46w9g6sy.png.thumb.jpg" alt="图"></p>
+<p>下载链接：<a href="https://pan.baidu.com/s/1c2aQPPI" target="_blank" rel="noopener">https://pan.baidu.com/s/1c2aQPPI</a></p>
 
                     </article>
                     
@@ -461,7 +465,7 @@ window.oldVersion = [
                 本作品采用<a rel="license" href="http://creativecommons.org/licenses/by/3.0/cn/">知识共享署名 3.0 中国大陆许可协议</a>进行许可。您可以在遵守此协定的前提下对本文进行再发布、分享、修改等。
             </strong>
             <br>
-            <strong>本文链接&nbsp;:&nbsp;</strong><a href="https://pokon548.ink/2017/07/03/7-1预装软件限制计划正式施行，MIUI或成先驱？/">https://pokon548.ink/2017/07/03/7-1预装软件限制计划正式施行，MIUI或成先驱？/</a>
+            <strong>本文链接&nbsp;:&nbsp;</strong><a href="https://pokon548.ink/2017/06/18/（自编写应用）SELinux-mode-changer/">https://pokon548.ink/2017/06/18/（自编写应用）SELinux-mode-changer/</a>
         </p>
     </blockquote>
 
@@ -482,9 +486,9 @@ window.oldVersion = [
     </script>
 
 
-<p class="post-footer-info mb-0 pt-0">本文发表于&nbsp;<time datetime="2017-07-03T01:12:35.000Z" itemprop="datePublished">2017-07-03</time>
+<p class="post-footer-info mb-0 pt-0">本文发表于&nbsp;<time datetime="2017-06-18T02:26:07.000Z" itemprop="datePublished">2017-06-18</time>
 
-    , 最后修改于&nbsp;<time datetime="2019-08-07T18:18:11.437Z" itemprop="dateModified">2019-08-08</time>
+    , 最后修改于&nbsp;<time datetime="2019-08-07T18:20:21.165Z" itemprop="dateModified">2019-08-08</time>
 
 </p>
 <p class="post-footer-info mb-0 pt-2">
@@ -501,21 +505,14 @@ window.oldVersion = [
     <!-- Prev Nav -->
     
         <li class="page-item page-prev">
-            <a href="/2017/11/10/（向经典致敬！）MIUI即将停止红米1S开发版支持/" rel="prev">
+            <a href="/2017/07/03/7-1预装软件限制计划正式施行，MIUI或成先驱？/" rel="prev">
                 <div class="page-item-title"><i class="icon icon-back" aria-hidden="true"></i></div>
-                <div class="page-item-subtitle">（向经典致敬！）MIUI即将停止红米1S开发版支持</div>
+                <div class="page-item-subtitle">7.1预装软件限制计划正式施行，MIUI或成先驱？</div>
             </a>
         </li>
     
 
     <!-- Next Nav -->
-    
-        <li class="page-item page-next">
-            <a href="/2017/06/18/（自编写应用）SELinux-mode-changer/" rel="next">
-                <div class="page-item-title"><i class="icon icon-forward" aria-hidden="true"></i></div>
-                <div class="page-item-subtitle">（自编写应用）SELinux mode changer</div>
-            </a>
-        </li>
     
 </ul>
 </div>
