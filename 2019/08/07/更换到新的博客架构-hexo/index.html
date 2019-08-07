@@ -581,6 +581,8 @@ window.oldVersion = [
 
 <script src="https://cdn.jsdelivr.net/npm/gitalk@1.3.3/dist/gitalk.min.js"></script>
 
+<script src="https://blueimp.github.io/JavaScript-MD5/js/md5.js"></script>
+
 <script>
     var gitalk = new Gitalk({
             clientID: '342541158999156044f3',
@@ -590,10 +592,11 @@ window.oldVersion = [
             admin: ['pokon549'],
             // facebook-like distraction free mode
             distractionFreeMode: false,
-            id: window.location.pathname
+            id: md5(location.pathname)
         })
    gitalk.render('gitalk-container')
 </script>
+
                         </div>
                     
                 
