@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+    <head><meta name="generator" content="Hexo 3.9.0">
+    <meta charset="utf-8">
+    <!--
+        © SukkaW
+        GitHub: https://github.com/SukkaW/hexo-theme-suka
+        Version: 1.3.3
+    -->
+    <script>
+window.lsVersion = "1.3.3",
+window.oldVersion = [
+    
+        
+            "0.2.0","0.0.1","0.1.0","1.0.0","1.0.1","1.1.0","1.1.1","1.2.0","1.3.0","1.3.2"
+        
+    
+]
+</script>
+
+    <!-- ### DNS Prefetch ### -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+<!-- busuanzi -->
+
+    <link rel="dns-prefetch" href="//busuanzi.ibruce.info">
+
+
+<!-- comment -->
+
+
+
+    <link rel="dns-prefetch" href="//api.github.com">
+    <link rel="dns-prefetch" href="//cors-anywhere.herokuapp.com">
+
+
+
+
+
+<!-- analytics -->
+
+
+
+
+
+
+
+
+    <!-- ### Preload ### -->
+    
+    <!-- Busuanzi -->
+    
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/busuanzi@2.3.0/bsz.pure.mini.js" as="script">
+
+
+
+
+
+
+
+    <!-- ### Meta & Title & Info ### -->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge, chrome=1">
+<meta name="renderer" content="webkit">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+
+<!-- Title -->
+<title>用 Arcade 学习写一款 RPG 游戏 —— 让主角动起来 | pokon548&#39;s 博客</title>
+
+<!-- favicon -->
+<!-- Favicons -->
+
+    <link rel="icon" type="image/ico" href="/img/suka-favicon.ico">
+
+
+
+
+
+
+<!-- Android Chrome Color -->
+
+
+
+<meta name="format-detection" content="telephone=no">
+
+<!-- Description -->
+<meta name="description" content>
+
+<!-- Keywords -->
+<meta name="keywords" content>
+
+<!-- Disable Fucking Bloody Baidu Tranformation -->
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+    <!-- ### Import File ### -->
+    
+        <!-- spectre.css -->
+
+    <link rel="stylesheet" href="/lib/spectre/spectre.min.css">
+
+
+<style>
+    body {
+        background-color: #f8f9fa;
+    }
+
+    a, a:visited {
+        color: #0070ff;
+    }
+
+    a:active, a:focus, a:hover {
+        color: #0070ff;
+        opacity: .75;
+    }
+
+    #post-content a,
+    #post-content a:hover,
+    #post-content a:focus,
+    #post-content a:visited {
+        color: #005eb9;
+        opacity: 1;
+    }
+
+    .post-entry .card-body a {
+        color: #0070ff;
+    }
+
+    .avatar {
+        background: #444;
+    }
+
+    .navbar-link,
+    .navbar-link:visited,
+    .timeline .timeline-item .timeline-icon.icon-lg {
+        color: #0070ff;
+    }
+
+    .navbar-link:hover {
+        color: #0070ff;
+        opacity: .8;
+    }
+
+    #search-input .btn,
+    #disqus_click_btn,
+    #disqus-switch-to-direct,
+    #disqus-loadmore-button {
+        background: #727e96;
+        border-color: #727e96;
+        color: #fff;
+    }
+
+    #post-toc a.post-toc-link,
+    #post-toc a.post-toc-link:visited,
+    .share-menu.menu .menu-item>a {
+        color: #727e96;
+    }
+
+    .share-menu.menu .menu-item>a:hover,
+    .share-menu.menu .menu-item>a:focus,
+    .share-menu.menu .menu-item>a:visited {
+        color: #50596c;
+        background: #f8f9fa;
+        opacity: .85;
+    }
+</style>
+
+<!-- style.css -->
+
+    <link rel="stylesheet" href="/css/style.min.css">
+
+
+
+
+
+
+
+
+
+    <!-- Prettify Theme -->
+    
+    
+        <link rel="stylesheet" href="/css/highlight/github.min.css">
+    
+
+
+
+    
+
+    <!-- ### Site Verification ### -->
+    
+
+
+    <!-- ### RSS ### -->
+    
+
+    <!-- ### WebApp ### -->
+    <meta name="mobile-web-app-capable" content="yes">
+<meta name="application-name" content="pokon548&#39;s 博客">
+<meta name="msapplication-starturl" content="https://pokon548.ink">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="pokon548&#39;s 博客">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+<!-- Manifest Import -->
+
+<!-- Open Search -->
+
+    <link rel="search" type="application/opensearchdescription+xml" href="opensearch.xml" title="pokon548&#39;s 博客">
+
+
+    <!-- ### The Open Graph & Twitter Card Protocol ### -->
+    <meta property="og:title" content="用 Arcade 学习写一款 RPG 游戏 —— 让主角动起来 | pokon548&#39;s 博客">
+<meta property="og:site_name" content="pokon548&#39;s 博客">
+
+<meta property="og:locale" content="zh-CN">
+
+<meta property="og:url" content="https://pokon548.ink/2019/08/08/用-Arcade-学习写一款-RPG-游戏-——-让主角动起来/">
+<meta property="og:image" content="https://pokon548.ink/img/suka-favicon.ico">
+
+<meta property="og:description" content>
+
+<meta name="twitter:card" content="summary">
+
+
+    <meta property="og:type" content="article">
+    <meta property="article:published_time" content="2019-08-08T08:18:02.000Z">
+    <meta property="article:modified_time" content="2019-08-08T08:18:02.000Z">
+    <meta property="article:author" content="pokon548">
+    <meta property="og:article:tag" content> 
+
+
+
+
+
+    <!-- ### Analytics ### -->
+    
+
+
+
+
+
+
+
+
+    <!-- ### Canonical link ### -->
+    <link rel="canonical" href="https://pokon548.ink/2019/08/08/用-Arcade-学习写一款-RPG-游戏-——-让主角动起来/">
+
+    <!-- ### Structured Data ### -->
+    
+
+
+
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "url": "https://pokon548.ink/2019/08/08/用-Arcade-学习写一款-RPG-游戏-——-让主角动起来/",
+    "@type": "BlogPosting",
+    "logo": "https://pokon548.ink/img/suka-favicon.ico",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://pokon548.ink/2019/08/08/用-Arcade-学习写一款-RPG-游戏-——-让主角动起来/"
+    },
+    "headline": "用 Arcade 学习写一款 RPG 游戏 —— 让主角动起来 | pokon548&#39;s 博客",
+    
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://pokon548.ink/img/suka-favicon.ico"
+    },
+    
+    "datePublished": "2019-08-08T08:18:02.000Z",
+    "dateModified": "2019-08-08T11:15:28.886Z",
+    "author": {
+        "@type": "Person",
+        "name": "pokon548",
+        "image": {
+            "@type": "ImageObject",
+            "url": "https://pokon548.ink/img/default_avatar.png"
+        },
+        "description": "探索微创新，为发烧而生"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "pokon548&#39;s 博客",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://pokon548.ink/img/suka-favicon.ico"
+        }
+    },
+    
+    "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://pokon548.ink/search/?s={search_term_string}",
+        "query-input": "required name=search_term_string"
+    },
+    
+    "keywords": "",
+    "description": ""
+}
+</script>
+
+
+
+    <!-- ### Custom Head ### -->
+    
+
+
+</head>
+
+    <body>
+        
+
+            
+
+            <!-- ### Main content ### -->
+            <!-- ## Header ##-->
+<header>
+    <h1 class="header-title text-center"><a href="/">pokon548&#39;s 博客</a></h1>
+
+    <p class="text-center header-slogan">
+        
+            
+                探索微创新，为发烧而生
+            
+        
+    </p>
+
+    <nav class="navbar-section text-center">
+    
+        <a href="/" class="navbar-link">首页</a>
+    
+    
+        <a href="/archives/" class="navbar-link">归档</a>
+    
+    
+        <a href="/search/" class="navbar-link">搜索</a>
+    
+    
+        <a href="/about/" class="navbar-link">关于我</a>
+    
+    
+    
+</nav>
+</header>
+
+            
+    <!-- ## Post ## -->
+    
+    
+
+
+<div class="post-container">
+    <div id="post-card" class="card">
+        
+        <div class="card-item-container">
+            <div class="card-inner-cell">
+                <!-- # Post Header Info # -->
+                <div class="card-header">
+                    
+    <h1 class="card-title h3 mb-2">用 Arcade 学习写一款 RPG 游戏 —— 让主角动起来</h1>
+
+
+
+
+<div class="post-header-info">
+    <p class="post-header-info-left text-gray">
+        <img class="author-thumb lazyload" data-src="/img/default_avatar.png" src="/img/suka-lazyload.gif" alt="pokon548's Avatar">
+        <span>2019-08-08</span>
+        
+        
+            <!-- Busuanzi Post Views -->
+<span id="busuanzi_container_page_pv" hidden>
+    <span class="suka-devide-dot"></span>
+    <span></span>
+    <span id="busuanzi_value_page_pv"></span>
+    <span>次点击</span>
+</span>
+        
+        
+    </p>
+    <div class="post-header-info-right">
+        
+            <div class="dropdown dropdown-right">
+<a class="dropdown-toggle" tabindex="0">分享本文</a>
+<ul class="menu share-menu">
+    <!-- Share Weibo -->
+    
+    <li class="menu-item">
+        <a href="http://service.weibo.com/share/share.php?appkey=&title=用 Arcade 学习写一款 RPG 游戏 —— 让主角动起来&url=https://pokon548.ink/2019/08/08/用-Arcade-学习写一款-RPG-游戏-——-让主角动起来/&pic=https://pokon548.ink/img/suka-favicon.ico&searchPic=false&style=simple" target="_blank" rel="external noopener noreferrer nofollow">分享到微博</a>
+    </li>
+    
+
+    <!-- Share Twitter -->
+    
+
+    <!-- Share Facebook -->
+    
+
+    <!-- Share Google+ -->
+    
+
+    <!-- Share LinkedIn -->
+    
+    <li class="menu-item">
+        <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://pokon548.ink/2019/08/08/用-Arcade-学习写一款-RPG-游戏-——-让主角动起来/&title=pokon548's 博客" target="_blank" rel="external noopener noreferrer nofollow">分享到 LinkedIn</a>
+    </li>
+    
+
+    <!-- Share QQ -->
+    
+    <li class="menu-item">
+        <a href="http://connect.qq.com/widget/shareqq/index.html?site=pokon548's 博客&title=pokon548's 博客&summary=&pics=https://pokon548.ink/img/suka-favicon.ico&url=https://pokon548.ink/2019/08/08/用-Arcade-学习写一款-RPG-游戏-——-让主角动起来/" target="_blank" rel="external noopener noreferrer nofollow"> 分享到 QQ</a>
+    </li>
+    
+
+    <!-- Share Telegram -->
+    
+
+    <!-- QRCode -->
+    
+    <li class="menu-item">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAAAAAAYplnuAAACqUlEQVR42u3czVLDMAxF4b7/S8OGDZ1Y91wn6cDkdMNfST4zqJZkwevrHz5eokWLFv1A9Gt4rJ7z60I/H79//f3z03OxQ7RoiD78pV/gKGS1iKPFUodo0Q06BVJCT4tdLYYuXrToO9HTTcn7q6ATLfqT6NXmcpRAHQXhhBMt+i40DYwpkFYB2CRQl2R5oh+PngrKT769rBoX/Wh0bPqFBayS/rTRTJvS6a6p6EejU3KfkhxSPKSCIt1ftOgWPSUxJPhIU5E00OM1RIsG6OmCpFidNhO66dDCWLRogibJD22cnz1wSo1K0aIpmiRH043JxjRtODi4RYsG6JTwNAlSApDrji8MokVDdAqE8fAmHHimRhApFkSLbtCpkd0OnKRkKi1+TLZEiy7QJNlpioUUtM3QgGjRO+hm40g3mAKsGVpEB/qiRYememyYhGGUtNjUxBkXLFo0QJMGDUmSdgdo0yGsaNEtmnxzU6ym4jShx+eIFg3RJMEhgToNpLRDAlXlIlp0OXhFg48cdJKCY3kP0aIhumm0pKTmzEZUby6iRYPDz+mFnyb75Jrp4Ei06CvQTfOFNhXTsADBixbdoKfkm/xxQypmp0KZFiGiRTdo0tieNpXUgKfXnjYo0aJ30OSwnQQP+aOINIS4DH7RogE6DU2l5H218ZBFJTCaQhAtemhAts3vnaYO2ahQIIoWDWtEMpjSNCLpoWo9WSNa9IkD/XRzEmhN4C1/CKJFA3R7kEMCiB5okgEW1DUVLXrzH8G3jcS2gR4HV0SLhujqsOaCIRY6KItPAkSLPvmP4CdIO8SSGuuiRd+NpoNapHlOFy5a9F3oNHySkiSyYVXVuGjRG/l0atyQ4pQWzfHgSrRoiJ4Cofl8WlQbyGMgiha92Z/+Sw/RokWLfhD6G2c3Wqj/n0LBAAAAAElFTkSuQmCC" alt="QRCode">
+    </li>
+    
+
+</ul>
+</div>
+        
+    </div>
+</div>
+                </div>
+                <div class="card-body">
+                    
+                        
+                            <div id="post-toc">
+                                <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#进入-Arcade-并创建游戏项目"><span class="post-toc-number">1.</span> <span class="post-toc-text">进入 Arcade 并创建游戏项目</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#游戏主人公-——-精灵"><span class="post-toc-number">2.</span> <span class="post-toc-text">游戏主人公 —— 精灵</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#创建精灵"><span class="post-toc-number">2.1.</span> <span class="post-toc-text">创建精灵</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#给精灵皮肤"><span class="post-toc-number">2.2.</span> <span class="post-toc-text">给精灵皮肤</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#Arcade-目前只支持-16-位色的显示！"><span class="post-toc-number">2.2.1.</span> <span class="post-toc-text">Arcade 目前只支持 16 位色的显示！</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#让主人公动起来"><span class="post-toc-number">3.</span> <span class="post-toc-text">让主人公动起来</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#一般游戏的运行逻辑"><span class="post-toc-number">3.1.</span> <span class="post-toc-text">一般游戏的运行逻辑</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#进行“初始化”操作"><span class="post-toc-number">3.2.</span> <span class="post-toc-text">进行“初始化”操作</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#让主人公能够运动起来"><span class="post-toc-number">3.3.</span> <span class="post-toc-text">让主人公能够运动起来</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#小心！别张冠李戴"><span class="post-toc-number">3.3.1.</span> <span class="post-toc-text">小心！别张冠李戴</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#小结"><span class="post-toc-number">4.</span> <span class="post-toc-text">小结</span></a></li></ol>
+                            </div>
+                        
+                    
+                    <article id="post-content">
+                        <p><a href="https://pokon548.ink/2019/08/08/%E7%94%A8-Arcade-%E5%AD%A6%E4%B9%A0%E5%86%99%E4%B8%80%E6%AC%BE-RPG-%E6%B8%B8%E6%88%8F-%E2%80%94%E2%80%94-%E5%85%A5%E9%97%A8/">前一篇文章</a>已经提到了如何使用 Arcade 这一十分方便的在线游戏编程学习平台。那么这次我们就来正式开始写游戏吧！</p>
+<h2 id="进入-Arcade-并创建游戏项目"><a href="#进入-Arcade-并创建游戏项目" class="headerlink" title="进入 Arcade 并创建游戏项目"></a>进入 Arcade 并创建游戏项目</h2><p>首先，请戳<a href="https://arcade.makecode.com/" target="_blank" rel="noopener">这里</a>进入 Arcade 平台。在页面加载完毕后，找到“我的项目”，并点击大大的紫色按钮“新建项目”。<br><img src="https://i.loli.net/2019/08/08/MNneU5hAbaJ1TSv.png" alt="深度截图20190808162305.png"></p>
+<p>新建项目可能需要一点时间，请耐心等待进度条停止显示。<br><img src="https://i.loli.net/2019/08/08/WCBvyArxL5gRw4D.png" alt="深度截图20190808162503.png"></p>
+<p>当界面变成下图模样时，即代表项目已经创建完成。可以开始了！<br><img src="https://i.loli.net/2019/08/08/5nNPVhMjJrcqaCG.png" alt="深度截图20190808162633.png"></p>
+<h2 id="游戏主人公-——-精灵"><a href="#游戏主人公-——-精灵" class="headerlink" title="游戏主人公 —— 精灵"></a>游戏主人公 —— 精灵</h2><p>在 Arcade 中，游戏主人公以及其它各种各样的 RPG 都有一个统称，叫做“精灵”（不要问我为什么叫这个）。<br><img src="https://i.loli.net/2019/08/08/owhpa1W4dQegrtv.png" alt="深度截图选择区域20190808162821.png"><br>通过创建精灵，你可以为游戏添加主人公、NPC、怪兽、云（对，就是每天在我们天上飘的那个）、子弹（对，你没有看错，它真的可以干这个）等等… 可以说，这个是游戏里面相当重要的一环了。</p>
+<h3 id="创建精灵"><a href="#创建精灵" class="headerlink" title="创建精灵"></a>创建精灵</h3><p>那么，该怎么创建一个精灵呢？很简单。点击左侧的“精灵”分区，把这个方块拖出来即可。<br><img src="https://i.loli.net/2019/08/08/yvTqoua2j5mrgzB.gif" alt="深度录屏选择区域20190808165056.gif"></p>
+<h3 id="给精灵皮肤"><a href="#给精灵皮肤" class="headerlink" title="给精灵皮肤"></a>给精灵皮肤</h3><p>你一定不会想要你的主角在屏幕上是透明的存在吧（当然如果你要五毛钱特效当我没说）？为了让主人公富有活力，同时让玩家有玩这款游戏的欲望，我们需要给精灵一层皮肤。<br>当然了，手动绘制一个精灵的皮肤不是我们这篇博文的重点。故我们就使用 Arcade 自带的主角皮肤就好（相信我，其实自带的皮肤还挺帅的）。</p>
+<p>要给精灵加上皮肤，请找到你刚刚拖出来的方块，点击这个灰色的地方。<br><img src="https://i.loli.net/2019/08/08/n4HsdEwkRiGftzO.gif" alt="深度录屏选择区域20190808171751.gif"></p>
+<p>接下来，你应该会看到这样的一个弹出框。这个就是皮肤的编辑框了。<br><img src="https://i.loli.net/2019/08/08/aQN7ySr3EkldhgU.png" alt="深度截图选择区域20190808163900.png"></p>
+<p>然后，我们切换到“Gallery”分栏里，选择 Arcade 自带的主角皮肤。选择完后，点击“完成”。<br><img src="https://i.loli.net/2019/08/08/HJwv2nUD1NlVBXC.gif" alt="深度录屏选择区域20190808164110.gif"></p>
+<p>这样，我们的主角就有皮肤了。</p>
+<blockquote>
+<h4 id="Arcade-目前只支持-16-位色的显示！"><a href="#Arcade-目前只支持-16-位色的显示！" class="headerlink" title="Arcade 目前只支持 16 位色的显示！"></a>Arcade 目前只支持 16 位色的显示！</h4><p>如果你是一个特别喜欢各种颜色搭配的 Geek，那么 Arcade 也许会让你小小的失望一番 —— 其（不包括透明色）只支持 16 种颜色的显示。<br>这也是为什么皮肤编辑器里没有“RGB调色板“一类东西的原因。不过相信我，16 位色在学习游戏开发的过程中完全够用，因此不需要太过于担心。</p>
+</blockquote>
+<h2 id="让主人公动起来"><a href="#让主人公动起来" class="headerlink" title="让主人公动起来"></a>让主人公动起来</h2><p>你也许注意到了一点：我们现在拖出来的那个方块“失去了颜色”。这是不是在提醒着我们什么？如果你敏锐的感受到了这一点，那么 pokon548 向你表示小小的祝贺！的确！这提醒我们：这个方块目前不会产生实际的效果。<br>什么意思呢？让我们先点击左侧的“播放按钮”看看目前这个项目运行的结果。<br><img src="https://i.loli.net/2019/08/08/raDYKIwg2ChxWej.png" alt="深度截图择区域20190808165919.png"></p>
+<p>你会发现：左侧模拟器的“屏幕”上最终什么都没有。没有显示出我们刚刚创建出来的主角。怎么回事呢？</p>
+<h3 id="一般游戏的运行逻辑"><a href="#一般游戏的运行逻辑" class="headerlink" title="一般游戏的运行逻辑"></a>一般游戏的运行逻辑</h3><p>这就要谈到目前常见游戏的运转逻辑了。在现代的常见游戏中，无论是选关、得到道具、NPC 的交流、主人公的行走等，都是在一个循环里面进行的。<br>而要让这一切发生，我们首先要进行“初始化”操作。如果你不明白这个词的含义，举个例子：要让主角在后面的循环中动起来，我们必须要先有一个主角才行（不然主角是幽灵吗滑稽）。不然后面的循环里我们要操作什么呢？</p>
+<h3 id="进行“初始化”操作"><a href="#进行“初始化”操作" class="headerlink" title="进行“初始化”操作"></a>进行“初始化”操作</h3><p>回到项目上。我们刚刚创建“主人公”这一动作其实就是“初始化”操作的一部分。而为了让这个方块发挥其初始化主角的作用，我们要把这个方块拖动到绿色的“当开机时”的方块内。<br>下面是操作方法的动态示意图：<br><img src="https://i.loli.net/2019/08/08/SlzYtpmhPFJwybU.gif" alt="深度录屏选择区域20190808170740.gif"></p>
+<p>你看，方块是不是恢复到正常颜色了？我们现在再试试点击”播放“按钮，看看项目的运行情况。<br><img src="https://i.loli.net/2019/08/08/cPen7m8zxldTRNY.png" alt="深度截图选择区域20190808170958.png"></p>
+<p>我们的主角出现了哦！真棒！</p>
+<h3 id="让主人公能够运动起来"><a href="#让主人公能够运动起来" class="headerlink" title="让主人公能够运动起来"></a>让主人公能够运动起来</h3><p>也许你之前曾试过点击左侧模拟器的方向键。如果没有的话，pokon548 推荐你现在就点点看。<br><img src="https://i.loli.net/2019/08/08/BWVJ6USbes4Tv8N.png" alt="深度截图选择区域20190808173851.png"></p>
+<p>没有任何效果？那就对了。因为我们还没做好这个功能呢！唔…接下来我们要做的，就是让主角能够在我们按下方向键的时候动起来！<br>听起来似乎很复杂的样子。但是在 Arcade 里面，我们只需要另外一个方块就可以搞定啦！</p>
+<p>要让主角跟随方向键的<del>律动</del>指引动起来，我们要在“控制器”分区里找到这个方块，并将其放置在“主角初始化”方块的下方。</p>
+<p><img src="https://i.loli.net/2019/08/08/p3MC7VloPeywISW.gif" alt="深度录屏选择区域20190808180326.gif"></p>
+<blockquote>
+<h4 id="小心！别张冠李戴"><a href="#小心！别张冠李戴" class="headerlink" title="小心！别张冠李戴"></a>小心！别张冠李戴</h4><p>如果你先前不小心多创建了一些精灵，那么变量名可能会混乱起来。如果要保证“控制器”方块能够起作用，必须要保证主角的“名字”（这里是指变量名）前后一致。比如上面的示意图中，两个方块指向的“名字”是不一样的，要将其改成一样的才可以。<br>要将其改成一样的，请按下图方式操作。<br><img src="https://i.loli.net/2019/08/08/KcNzeXJGMAdqSVa.gif" alt="深度录屏选择区域20190808174506.gif"></p>
+</blockquote>
+<p>好了，现在主角应该就可以动起来了。试试点击左侧的方向键（记得要先点击“播放”按钮运行项目！以后不再提示），主角是否运动起来了？</p>
+<h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p>通过本次文章的学习，你应该知道：</p>
+<ul>
+<li>如何使用 Arcade 创建项目。</li>
+<li>如何创建主角。</li>
+<li>如何给主角换皮肤。</li>
+<li>如何让主角能够成功的跟随方向键的节奏动起来。</li>
+</ul>
+<p>学习任何一件事情都不是那么容易，故 pokon548 建议你“每天只学一章”本教程。每天只学习一章，看似进度缓慢，但却为你后续的学习打下了坚实的基础。通过这样的学习方式，你的学习难度将“不升反降”，后面越学越轻松。<br>心急吃不了热豆腐！请一定要慢下学习的节奏，以期慢工出细活。</p>
+
+                    </article>
+                    
+    <blockquote class="post-license">
+        <p>
+            <strong>本文作者&nbsp;:&nbsp;pokon548</strong>
+            <br>
+            <strong>
+            
+                本作品采用<a rel="license" href="http://creativecommons.org/licenses/by/3.0/cn/">知识共享署名 3.0 中国大陆许可协议</a>进行许可。您可以在遵守此协定的前提下对本文进行再发布、分享、修改等。
+            </strong>
+            <br>
+            <strong>本文链接&nbsp;:&nbsp;</strong><a href="https://pokon548.ink/2019/08/08/用-Arcade-学习写一款-RPG-游戏-——-让主角动起来/">https://pokon548.ink/2019/08/08/用-Arcade-学习写一款-RPG-游戏-——-让主角动起来/</a>
+        </p>
+    </blockquote>
+
+
+
+    <blockquote id="date-expire-notification" class="post-expired-notify">本文最后更新于 <span id="date-expire-num"></span> 天前，文中所描述的信息可能已发生改变</blockquote>
+    <script>
+        var dateUpdate = Date.parse("2019-08-08");
+        var nowDate = new Date();
+        var a = nowDate.getTime();
+        var b = a - dateUpdate;
+        var daysUpdateExpire = Math.floor(b/(24*3600*1000));
+        if (daysUpdateExpire >= 120) {
+            document.getElementById('date-expire-num').innerHTML = daysUpdateExpire;
+        } else {
+            document.getElementById('date-expire-notification').style.display = 'none';
+        }
+    </script>
+
+
+<p class="post-footer-info mb-0 pt-0">本文发表于&nbsp;<time datetime="2019-08-08T08:18:02.000Z" itemprop="datePublished">2019-08-08</time>
+
+</p>
+<p class="post-footer-info mb-0 pt-2">
+
+
+
+
+</p>
+
+                </div>
+                
+<div class="post-nav px-2 bg-gray">
+<ul class="pagination">
+    <!-- Prev Nav -->
+    
+
+    <!-- Next Nav -->
+    
+        <li class="page-item page-next">
+            <a href="/2019/08/08/用-Arcade-学习写一款-RPG-游戏-——-入门/" rel="next">
+                <div class="page-item-title"><i class="icon icon-forward" aria-hidden="true"></i></div>
+                <div class="page-item-subtitle">用 Arcade 学习写一款 RPG 游戏 —— 入门</div>
+            </a>
+        </li>
+    
+</ul>
+</div>
+
+                
+                    <!-- # Comment # -->
+                    
+                        <div class="card-footer post-comment">
+                            <!-- Gitalk Container -->
+<div id="gitalk-container"></div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1.3.3/dist/gitalk.min.css">
+
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1.3.3/dist/gitalk.min.js"></script>
+
+<script src="https://blueimp.github.io/JavaScript-MD5/js/md5.js"></script>
+
+<script>
+    var gitalk = new Gitalk({
+            clientID: '342541158999156044f3',
+            clientSecret: '9a19d9fa81fd10c02d96cbe05b8a58a7ed924459',
+            repo: 'pokon549.github.io',
+            owner: 'pokon549',
+            admin: ['pokon549'],
+            // facebook-like distraction free mode
+            distractionFreeMode: false,
+            id: md5(window.location.pathname)
+        })
+   gitalk.render('gitalk-container')
+</script>
+
+                        </div>
+                    
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+            <!-- ### Footer ### -->
+            <footer class="text-center">
+    <!-- footer copyright -->
+    <p class="footer-copyright mb-0">Copyright&nbsp;©&nbsp;<span data-year></span>
+        <a class="footer-copyright-a" href="https://pokon548.ink">pokon548&#39;s 博客</a>
+    </p>
+    <!-- footer custom text -->
+    <p class="footer-text mb-0">
+    
+        
+            <a href="https://github.com/pokon548">我的 GitHub</a> | <a href="https://sm.ms/">SM.MS 图床</a>
+        
+    
+    </p>
+    <!-- footer develop info -->
+    <p class="footer-develop mb-0">
+        
+            
+    <!-- Busuanzi User Views -->
+    <span id="busuanzi_container_site_uv" hidden>
+        <span></span>
+        <span id="busuanzi_value_site_uv"></span>
+        <span>位来访者</span>
+        
+            <span>|</span>
+        
+    </span>
+
+
+
+        
+        
+        Powered by&nbsp;<!--
+         --><a href="https://hexo.io" target="_blank" class="footer-develop-a" rel="external nofollow noopener noreferrer">Hexo</a><span class="footer-develop-divider"></span>Theme&nbsp;-&nbsp;<!--
+         --><a href="https://github.com/SukkaW/hexo-theme-suka" target="_blank" class="footer-develop-a" rel="external noopener">Suka</a>
+    </p>
+</footer>
+
+        
+
+        <!-- ### Import File ### -->
+        <!-- ### Footer JS Import ### -->
+
+<script>
+window.lazyLoadOptions = {
+    elements_selector: ".lazyload",
+    threshold: 50
+};
+
+
+
+    /* Copyright */
+    var copyrightNow = new Date().getFullYear();
+    var copyrightContent = document.querySelector('span[data-year]')
+    
+        copyrightSince = 2016;
+        if (copyrightSince === copyrightNow) {
+            copyrightContent.textContent = copyrightNow
+        } else {
+            copyrightContent.textContent = copyrightSince + ' - ' + copyrightNow
+        }
+    
+
+
+
+/* Cnosole Log */
+console.log('\n %c Suka Theme (hexo-theme-suka) | © SukkaW | Verision 1.3.3 %c https://github.com/SukkaW/hexo-theme-suka \n', 'color: #fff; background: #444; padding:5px 0;', 'background: #bbb; padding:5px 0;');
+</script>
+
+<!-- vanilla-lazyload -->
+
+    <script src="/lib/vanilla-lazyload/lazyload.min.js" async></script>
+
+
+
+    <!-- Busuanzi -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/busuanzi@2.3.0/bsz.pure.mini.js" async></script>
+
+
+<!-- Offset -->
+
+
+
+
+
+
+
+<!-- gallery.js -->
+
+
+<!-- Comment -->
+
+    
+        <!-- GitTalk -->
+    
+
+
+<!-- ### Custom Footer ### -->
+
+
+    </body>
+
+</html>
