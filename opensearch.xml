@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
+	<ShortName>pokon548's blog</ShortName>
+	<Description>Just a personal blog.</Description>
+	<Url type="text/html" template="https://pokon548.ink/search/?s={searchTerms}" />
+</OpenSearchDescription>
