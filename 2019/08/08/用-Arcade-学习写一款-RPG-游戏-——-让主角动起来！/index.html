@@ -267,7 +267,7 @@ window.oldVersion = [
     },
     
     "datePublished": "2019-08-08T08:18:02.000Z",
-    "dateModified": "2019-08-08T09:32:22.655Z",
+    "dateModified": "2019-08-08T09:48:06.131Z",
     "author": {
         "@type": "Person",
         "name": "pokon548",
@@ -445,7 +445,7 @@ window.oldVersion = [
                     
                         
                             <div id="post-toc">
-                                <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#通过这篇博文，你能了解"><span class="post-toc-number">1.</span> <span class="post-toc-text">通过这篇博文，你能了解</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#进入-Arcade-并创建游戏项目"><span class="post-toc-number">2.</span> <span class="post-toc-text">进入 Arcade 并创建游戏项目</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#游戏主人公-——-精灵"><span class="post-toc-number">3.</span> <span class="post-toc-text">游戏主人公 —— 精灵</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#创建精灵"><span class="post-toc-number">3.1.</span> <span class="post-toc-text">创建精灵</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#给精灵皮肤"><span class="post-toc-number">3.2.</span> <span class="post-toc-text">给精灵皮肤</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#Arcade-目前只支持-16-位色的显示！"><span class="post-toc-number">3.2.1.</span> <span class="post-toc-text">Arcade 目前只支持 16 位色的显示！</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#让主人公动起来"><span class="post-toc-number">4.</span> <span class="post-toc-text">让主人公动起来</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#一般游戏的运行逻辑"><span class="post-toc-number">4.1.</span> <span class="post-toc-text">一般游戏的运行逻辑</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#进行“初始化”操作"><span class="post-toc-number">4.2.</span> <span class="post-toc-text">进行“初始化”操作</span></a></li></ol></li></ol>
+                                <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#通过这篇博文，你能了解"><span class="post-toc-number">1.</span> <span class="post-toc-text">通过这篇博文，你能了解</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#进入-Arcade-并创建游戏项目"><span class="post-toc-number">2.</span> <span class="post-toc-text">进入 Arcade 并创建游戏项目</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#游戏主人公-——-精灵"><span class="post-toc-number">3.</span> <span class="post-toc-text">游戏主人公 —— 精灵</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#创建精灵"><span class="post-toc-number">3.1.</span> <span class="post-toc-text">创建精灵</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#给精灵皮肤"><span class="post-toc-number">3.2.</span> <span class="post-toc-text">给精灵皮肤</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#Arcade-目前只支持-16-位色的显示！"><span class="post-toc-number">3.2.1.</span> <span class="post-toc-text">Arcade 目前只支持 16 位色的显示！</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#让主人公动起来"><span class="post-toc-number">4.</span> <span class="post-toc-text">让主人公动起来</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#一般游戏的运行逻辑"><span class="post-toc-number">4.1.</span> <span class="post-toc-text">一般游戏的运行逻辑</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#进行“初始化”操作"><span class="post-toc-number">4.2.</span> <span class="post-toc-text">进行“初始化”操作</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#让主人公能够运动起来"><span class="post-toc-number">4.3.</span> <span class="post-toc-text">让主人公能够运动起来</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#小心！别张冠李戴"><span class="post-toc-number">4.3.1.</span> <span class="post-toc-text">小心！别张冠李戴</span></a></li></ol></li></ol></li></ol>
                             </div>
                         
                     
@@ -475,9 +475,14 @@ window.oldVersion = [
 <h3 id="进行“初始化”操作"><a href="#进行“初始化”操作" class="headerlink" title="进行“初始化”操作"></a>进行“初始化”操作</h3><p>回到项目上。我们刚刚创建“主人公”这一动作其实就是“初始化”操作的一部分。而为了让这个方块发挥其初始化主角的作用，我们要把这个方块拖动到绿色的“当开机时”的方块内。<br>下面是操作方法的动态示意图：<br><img src="https://i.loli.net/2019/08/08/SlzYtpmhPFJwybU.gif" alt="深度录屏选择区域20190808170740.gif"></p>
 <p>你看，方块是不是恢复到正常颜色了？我们现在再试试点击”播放“按钮，看看项目的运行情况。<br><img src="https://i.loli.net/2019/08/08/cPen7m8zxldTRNY.png" alt="深度截图选择区域20190808170958.png"></p>
 <p>我们的主角出现了哦！真棒！</p>
+<h3 id="让主人公能够运动起来"><a href="#让主人公能够运动起来" class="headerlink" title="让主人公能够运动起来"></a>让主人公能够运动起来</h3><p>也许你之前曾试过点击左侧模拟器的方向键。如果没有的话，pokon548 推荐你现在就点点看。<br><img src="https://i.loli.net/2019/08/08/BWVJ6USbes4Tv8N.png" alt="深度截图选择区域20190808173851.png"></p>
+<p>没有任何效果？那就对了。因为我们还没做好这个功能呢！唔…接下来我们要做的，就是让主角能够在我们按下方向键的时候动起来！<br>听起来似乎很复杂的样子。但是在 Arcade 里面，我们只需要另外一个方块就可以搞定啦！</p>
+<p>要让主角跟随方向键的<del>律动</del>指引动起来，我们要在”控制器“分区里找到这个方块，并将其放置在”主角初始化“方块的下方。</p>
+<p><img src="https://i.loli.net/2019/08/08/gxzjVEA2ZRybQNh.png" alt="深度截图_20190808174027.png"></p>
 <blockquote>
-<p>因本日内触及 sm.ms 免费图床的发图限制（但 sm.ms 仍然是好用的图床！强烈推荐！有能力的话特别建议捐赠开发者），故暂时搁笔听写。未完待续…</p>
+<h4 id="小心！别张冠李戴"><a href="#小心！别张冠李戴" class="headerlink" title="小心！别张冠李戴"></a>小心！别张冠李戴</h4><p>如果你先前不小心多创建了一些精灵，那么变量名可能会混乱起来。如果要保证“控制器”方块能够起作用，必须要保证主角的“名字”（这里是指变量名）前后一致。比如上面的示意图中，两个方块指向的“名字”是不一样的，要将其改成一样的才可以。<br>要将其改成一样的，请按下图方式操作。<br><img src="https://i.loli.net/2019/08/08/KcNzeXJGMAdqSVa.gif" alt="深度录屏选择区域20190808174506.gif"></p>
 </blockquote>
+<p>好了，现在主角应该就可以动起来了。试试点击左侧的方向键（记得要先点击“播放”按钮运行项目！以后不再提示），主角是否运动起来了？</p>
 
                     </article>
                     
