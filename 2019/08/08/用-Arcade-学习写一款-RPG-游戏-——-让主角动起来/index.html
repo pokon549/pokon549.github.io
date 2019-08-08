@@ -269,7 +269,7 @@ window.oldVersion = [
     },
     
     "datePublished": "2019-08-08T08:18:02.000Z",
-    "dateModified": "2019-08-08T15:46:08.054Z",
+    "dateModified": "2019-08-08T15:51:08.668Z",
     "author": {
         "@type": "Person",
         "name": "pokon548",
@@ -422,7 +422,7 @@ window.oldVersion = [
 <h4 id="小心！别张冠李戴"><a href="#小心！别张冠李戴" class="headerlink" title="小心！别张冠李戴"></a>小心！别张冠李戴</h4><p>如果你先前不小心多创建了一些精灵，那么变量名可能会混乱起来。如果要保证“控制器”方块能够起作用，必须要保证主角的“名字”（这里是指变量名）前后一致。比如上面的示意图中，两个方块指向的“名字”是不一样的，要将其改成一样的才可以。<br>要将其改成一样的，请按下图方式操作。<br><img src="https://i.loli.net/2019/08/08/KcNzeXJGMAdqSVa.gif" alt="深度录屏选择区域20190808174506.gif"></p>
 </blockquote>
 <p>好了，现在主角应该就可以动起来了。试试点击左侧的方向键（记得要先点击“播放”按钮运行项目！以后不再提示），主角是否运动起来了？</p>
-<h2 id="项目代码"><a href="#项目代码" class="headerlink" title="项目代码"></a>项目代码</h2><p>这里的内容比较适合具有一定 Typescript 的童鞋。</p>
+<h2 id="项目代码"><a href="#项目代码" class="headerlink" title="项目代码"></a>项目代码</h2><p>这里的内容比较适合具有一定 Typescript 经验的童鞋。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">let mySprite: Sprite = null</span><br><span class="line">let mySprite2 = sprites.create(img`</span><br><span class="line">    . . . . . . f f f f . . . . . .</span><br><span class="line">    . . . . f f f 2 2 f f f . . . .</span><br><span class="line">    . . . f f f 2 2 2 2 f f f . . .</span><br><span class="line">    . . f f f e e e e e e f f f . .</span><br><span class="line">    . . f f e 2 2 2 2 2 2 e e f . .</span><br><span class="line">    . . f e 2 f f f f f f 2 e f . .</span><br><span class="line">    . . f f f f e e e e f f f f . .</span><br><span class="line">    . f f e f b f 4 4 f b f e f f .</span><br><span class="line">    . f e e 4 1 f d d f 1 4 e e f .</span><br><span class="line">    . . f e e d d d d d d e e f . .</span><br><span class="line">    . . . f e e 4 4 4 4 e e f . . .</span><br><span class="line">    . . e 4 f 2 2 2 2 2 2 f 4 e . .</span><br><span class="line">    . . 4 d f 2 2 2 2 2 2 f d 4 . .</span><br><span class="line">    . . 4 4 f 4 4 5 5 4 4 f 4 4 . .</span><br><span class="line">    . . . . . f f f f f f . . . . .</span><br><span class="line">    . . . . . f f . . f f . . . . .</span><br><span class="line">`, SpriteKind.Player)</span><br><span class="line">controller.moveSprite(mySprite)</span><br></pre></td></tr></table></figure>
 
 <p>使用方法：复制代码后，粘贴到 JavaScript 区域即可。</p>
