@@ -269,7 +269,7 @@ window.oldVersion = [
     },
     
     "datePublished": "2019-08-08T13:47:36.000Z",
-    "dateModified": "2019-08-08T13:55:19.800Z",
+    "dateModified": "2019-08-08T14:58:16.447Z",
     "author": {
         "@type": "Person",
         "name": "pokon548",
@@ -387,7 +387,7 @@ window.oldVersion = [
                     
                         
                             <div id="post-toc">
-                                <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#看文档，一定要找对应版本的"><span class="post-toc-number">1.</span> <span class="post-toc-text">看文档，一定要找对应版本的</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#项目里的-urls-py-并不和-manage-py-在同一文件夹下"><span class="post-toc-number">2.</span> <span class="post-toc-text">项目里的 urls.py 并不和 manage.py 在同一文件夹下</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#官方文档写得很好！"><span class="post-toc-number">3.</span> <span class="post-toc-text">官方文档写得很好！</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#遇到莫名其妙问题时的解决方法"><span class="post-toc-number">4.</span> <span class="post-toc-text">遇到莫名其妙问题时的解决方法</span></a></li></ol>
+                                <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#看文档，一定要找对应版本的"><span class="post-toc-number">1.</span> <span class="post-toc-text">看文档，一定要找对应版本的</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#项目里的-urls-py-并不和-manage-py-在同一文件夹下"><span class="post-toc-number">2.</span> <span class="post-toc-text">项目里的 urls.py 并不和 manage.py 在同一文件夹下</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#官方文档写得很好！"><span class="post-toc-number">3.</span> <span class="post-toc-text">官方文档写得很好！</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#遇到莫名其妙问题时的解决方法"><span class="post-toc-number">4.</span> <span class="post-toc-text">遇到莫名其妙问题时的解决方法</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Django-不应该因为-GIL-而被否定"><span class="post-toc-number">5.</span> <span class="post-toc-text">Django 不应该因为 GIL 而被否定</span></a></li></ol>
                             </div>
                         
                     
@@ -400,6 +400,7 @@ window.oldVersion = [
 <li>确保 Python 版本在 3.5 以上（点名 Debian 系）。</li>
 <li>如果是以前版本的 Django 创建的项目，在没有多大价值的情况下直接删了重建或者在新空模板的基础上移植一遍。</li>
 </ul>
+<h2 id="Django-不应该因为-GIL-而被否定"><a href="#Django-不应该因为-GIL-而被否定" class="headerlink" title="Django 不应该因为 GIL 而被否定"></a>Django 不应该因为 GIL 而被否定</h2><p>事实上，Django 本身从来就不专注于服务器本身。它只是一个专业的 Web 框架。要用于生产环境的话需要用一些专业的服务器软件，如 Gunicorn 搭配 gevent 协程框架来实现生产环境下的高并发请求场景。</p>
 
                     </article>
                     
