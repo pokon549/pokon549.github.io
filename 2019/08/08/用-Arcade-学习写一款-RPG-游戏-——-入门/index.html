@@ -267,7 +267,7 @@ window.oldVersion = [
     },
     
     "datePublished": "2019-08-08T04:11:28.000Z",
-    "dateModified": "2019-08-08T04:54:35.380Z",
+    "dateModified": "2019-08-08T05:04:07.285Z",
     "author": {
         "@type": "Person",
         "name": "pokon548",
@@ -453,35 +453,41 @@ window.oldVersion = [
                         <p>你有没有一个想要自己编写游戏的梦想呢？但是却苦于没有太多的编程经验而无从下手？现在有了 Microsoft 家出的 Arcade 平台，只需轻轻拖动方块即可完成游戏编写！不需要你拥有任何的编程经验。<br>最关键的一点是：<strong>它是一个免费的在线编程平台</strong>。这也就意味着：</p>
 <ul>
 <li>你不需要为使用这个平台付费，且</li>
-<li>你不需要对你的电脑做太多繁琐的环境部署操作。只要有一个合适的浏览器就可以开始了（至于什么是合适的浏览器，后文再讲）。<br>不过，正因为这是一个浏览器端的项目，所以你需要确保你的设备配置<strong>较高</strong>，以免在加载较多的 JavaScript 卡崩了你的设备。对于数据的丢失，pokon548 不负任何责任 :)</li>
+<li>你不需要对你的电脑做太多繁琐的环境部署操作。只要有一个合适的浏览器就可以开始了（至于什么是合适的浏览器，后文再讲）。</li>
 </ul>
-<h2 id="先睹为快"><a href="#先睹为快" class="headerlink" title="先睹为快"></a>先睹为快</h2><p>在开始之前，先看看 Arcade 长啥样吧：<br><img src="https://i.loli.net/2019/08/08/xYCFtnVUplD25b8.png" alt="深度截图20190808121854.png"></p>
-<p>丰富的官方示例和教程，不怕找不到学习的材料。<br><img src="https://i.loli.net/2019/08/08/nz819QOPXgSYmL4.png" alt="深度截图20190806160334.png"></p>
-<p>编辑器界面。可以看到所有的游戏逻辑都不是由代码组装起来的，而是一个一个的方块（如果你知道 Scratch，那么这样的界面对你而言应该是再熟悉不过了。什么，你不知道 Scratch 是何物？没关系<a href="https://scratch.mit.edu/" target="_blank" rel="noopener">点我</a>马上了解）。<br><img src="https://i.loli.net/2019/08/08/f9aQxWN5X6ZkDGS.png" alt="深度截图20190808121945.png"><br><img src="https://i.loli.net/2019/08/08/jyEYA83etUxu6qd.png" alt="深度截图20190808122323.png"></p>
-<p>还能在浏览器上即时游玩你编写的游戏！<br><img src="https://i.loli.net/2019/08/08/obn7Kj5MZqa2TuN.png" alt="深度截图20190808122404.png"></p>
+<p>不过，正因为这是一个浏览器端的项目，所以你需要确保你的设备配置<strong>较高</strong>，以免在加载较多的 JavaScript 卡崩了你的设备。对于数据的丢失，pokon548 不负任何责任 :)</p>
+<h2 id="先睹为快"><a href="#先睹为快" class="headerlink" title="先睹为快"></a>先睹为快</h2><p>在开始之前，先看看 Arcade 长啥样吧：<br><strong>丰富的官方示例和教程</strong>，不怕找不到学习的材料。<br><img src="https://i.loli.net/2019/08/08/xYCFtnVUplD25b8.png" alt="深度截图20190808121854.png"><br><img src="https://i.loli.net/2019/08/08/nz819QOPXgSYmL4.png" alt="深度截图20190806160334.png"></p>
+<p>编辑器界面。可以看到<strong>所有的游戏逻辑都不是由代码组装起来的，而是一个一个的方块</strong>（如果你知道 Scratch，那么这样的界面对你而言应该是再熟悉不过了。什么，你不知道 Scratch 是何物？没关系<a href="https://scratch.mit.edu/" target="_blank" rel="noopener">点我</a>马上了解）。<br><img src="https://i.loli.net/2019/08/08/f9aQxWN5X6ZkDGS.png" alt="深度截图20190808121945.png"><br><img src="https://i.loli.net/2019/08/08/jyEYA83etUxu6qd.png" alt="深度截图20190808122323.png"></p>
+<p>还能<strong>在浏览器上即时游玩你编写的游戏</strong>！<br><img src="https://i.loli.net/2019/08/08/obn7Kj5MZqa2TuN.png" alt="深度截图20190808122404.png"></p>
 <p>你也有一个博客？不妨考虑下把你写的游戏以 html 代码的放肆插入到博客里吧！<del>据说这样做的博主都提升了自己的“博客回头率”</del>（误）。<br><img src="https://i.loli.net/2019/08/08/jDZt3kBdX8bxzw7.png" alt="深度截图20190808122537.png"></p>
 <p>怎么样，感觉是不是还不错？那么我们就继续吧！</p>
 <h2 id="确认环境是否可以无误运行-Arcade"><a href="#确认环境是否可以无误运行-Arcade" class="headerlink" title="确认环境是否可以无误运行 Arcade"></a>确认环境是否可以无误运行 Arcade</h2><p>为了确保你的环境适合运行 Arcade，而不会出现“写完游戏但保存不到本地”等尴尬情况，请<strong>一定</strong>按照下面的步骤检查你的环境。</p>
 <ol>
-<li>点击<a href="https://arcade.makecode.com/" target="_blank" rel="noopener">这个链接</a>，进入到 Arcade 网页里。<br>如果浏览器支持的话，应该最终会出现下面这个界面：<br>（因为我已经用过 Arcade 很多次了，所以“我的项目”里有一些我自己的东西。你可能没有，但不用担心。这不会影响到后面步骤的操作 :)）<br><img src="https://i.loli.net/2019/08/08/qInhHNrLlp3SYEW.png" alt="深度截图20190808123422.png"></li>
+<li>点击<a href="https://arcade.makecode.com/" target="_blank" rel="noopener">这个链接</a>，进入到 Arcade 网页里。</li>
 </ol>
-<p>如果浏览器不支持 Arcade，那么你应该会看到这个界面：<br><img src="https://i.loli.net/2019/08/08/qInhHNrLlp3SYEW.png" alt="深度截图20190808123422.png"><br>如果你是后一种情况，那么你就需要安装一个新的浏览器了。个人推荐 Firefox 或者 Chrome，它们对于新标准的支持程度较好。</p>
+<p>如果浏览器支持的话，应该最终会出现下面这个界面：<br>（因为我已经用过 Arcade 很多次了，所以“我的项目”里有一些我自己的东西。你可能没有，但不用担心。这不会影响到后面步骤的操作 :)）<br><img src="https://i.loli.net/2019/08/08/qInhHNrLlp3SYEW.png" alt="深度截图20190808123422.png"></p>
+<p>如果浏览器不支持 Arcade，那么你应该会看到这个界面：<br><img src="https://i.loli.net/2019/08/08/YA8ylZenmEKsHXg.png" alt="深度截图20190808130153.png"></p>
+<p>如果你是后一种情况，那么你就需要安装一个新的浏览器了。个人推荐 Firefox 或者 Chrome，它们对于新标准的支持程度较好。</p>
 <ol start="2">
-<li><p>找到“<strong>积木块类游戏</strong>”板块，随意点一个游戏（比如说这里的“Falling Duck”）。并点击“打开示例”。<br><img src="https://i.loli.net/2019/08/08/haDzC8mT2jityfE.png" alt="深度截图20190808124044.png"><br><img src="https://i.loli.net/2019/08/08/hHDiARd1wxL7Pyu.png" alt="深度截图20190808124039.png"></p>
+<li><p>找到“<strong>积木块类游戏</strong>”板块，随意点一个游戏（比如说这里的“Falling Duck”）。并点击“打开示例”。<br><img src="https://i.loli.net/2019/08/08/hHDiARd1wxL7Pyu.png" alt="深度截图20190808124039.png"><br><img src="https://i.loli.net/2019/08/08/haDzC8mT2jityfE.png" alt="深度截图20190808124044.png"></p>
 </li>
-<li><p>等待项目加载完毕后，观察界面最后是不是长这个样子。<br><img src="https://i.loli.net/2019/08/08/uO5EaQ3eAytwIs8.png" alt="深度截图20190808124330.png"><br>如果界面元素有任何缺失，都说明浏览器支持程度不好。换一个浏览器吧。</p>
+<li><p>等待项目加载完毕后，观察界面最后是不是长这个样子。<br><img src="https://i.loli.net/2019/08/08/uO5EaQ3eAytwIs8.png" alt="深度截图20190808124330.png"></p>
 </li>
-<li><p>点击左边的“播放键”，观察游戏是否可以正常在线运行。<br><img src="https://i.loli.net/2019/08/08/tlQYCq9m1yS2rLD.png" alt="深度截图20190808124502.png"><br>不能就换浏览器。</p>
-</li>
-<li><p>点击左下角的“下载”，硬件随便点一个（比如说这里的 Meowbit），测试是否能正常下载代码。</p>
-</li>
+</ol>
+<p>如果界面元素有任何缺失，都说明浏览器支持程度不好。换一个浏览器吧。</p>
+<ol start="4">
+<li>点击左边的“播放键”，观察游戏是否可以正常在线运行。<br><img src="https://i.loli.net/2019/08/08/tlQYCq9m1yS2rLD.png" alt="深度截图20190808124502.png"></li>
+</ol>
+<p>不能就换浏览器。</p>
+<ol start="5">
+<li>点击左下角的“下载”，硬件随便点一个（比如说这里的 Meowbit），测试是否能正常下载代码。</li>
 </ol>
 <ul>
-<li>这一步很多浏览器做不了！！*</li>
-<li>这一步很多浏览器做不了！！！*</li>
-<li>这一步很多浏览器做不了！！！请务必认真对待。*</li>
+<li>这一步很多浏览器做不了！！</li>
+<li>这一步很多浏览器做不了！！！</li>
+<li>这一步很多浏览器做不了！！！请务必认真对待。</li>
 </ul>
-<p><img src="https://i.loli.net/2019/08/08/BlGR2OEk7AINevZ.png" alt="深度截图20190808125017.png"><br><img src="https://i.loli.net/2019/08/08/3whGkes1XAVJNal.png" alt="深度截图20190808125022.png"><br><img src="https://i.loli.net/2019/08/08/ED9CQNegJGH42ux.png" alt="深度截图20190808124841.png"></p>
+<p><img src="https://i.loli.net/2019/08/08/ED9CQNegJGH42ux.png" alt="深度截图20190808124841.png"><br><img src="https://i.loli.net/2019/08/08/3whGkes1XAVJNal.png" alt="深度截图20190808125022.png"><br><img src="https://i.loli.net/2019/08/08/BlGR2OEk7AINevZ.png" alt="深度截图20190808125017.png"></p>
 <p>如果能够正常下载代码，最后浏览器应该会提示你下载一个叫做“arcade-……..-.uf8”的文件。如果下载的文件名是一串由”data:“开头的字符串，或者压根就没有提示有文件可以下载，那么换浏览器。</p>
 <p>如果以上步骤均通过，那么恭喜你，Arcade 在你的设备上可以正常运作！:)</p>
 <h2 id="先玩玩看"><a href="#先玩玩看" class="headerlink" title="先玩玩看"></a>先玩玩看</h2><p>那么，这篇文章也就到此为止了。后续的内容将会在新的博文里推出。在继续之前，pokon548 强烈建议你多看看或者玩玩 Aracde 上已有的游戏或者教程，你会受益良多的的。</p>
