@@ -269,7 +269,7 @@ window.oldVersion = [
     },
     
     "datePublished": "2019-08-09T05:56:18.000Z",
-    "dateModified": "2019-08-09T06:12:38.702Z",
+    "dateModified": "2019-08-09T06:45:55.333Z",
     "author": {
         "@type": "Person",
         "name": "pokon548",
@@ -389,19 +389,28 @@ window.oldVersion = [
                     
                         
                             <div id="post-toc">
-                                <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#找到你之前的-Arcade-代码"><span class="post-toc-number">1.</span> <span class="post-toc-text">找到你之前的 Arcade 代码</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#不好！我一不小心创建了很多没用的项目"><span class="post-toc-number">1.0.1.</span> <span class="post-toc-text">不好！我一不小心创建了很多没用的项目</span></a></li></ol></li></ol></li></ol>
+                                <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#找到你之前的-Arcade-代码"><span class="post-toc-number">1.</span> <span class="post-toc-text">找到你之前的 Arcade 代码</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#不好！我一不小心创建了很多没用的项目"><span class="post-toc-number">1.0.1.</span> <span class="post-toc-text">不好！我一不小心创建了很多没用的项目</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#游戏的场景"><span class="post-toc-number">2.</span> <span class="post-toc-text">游戏的场景</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#创建地图模板"><span class="post-toc-number">2.1.</span> <span class="post-toc-text">创建地图模板</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#根据模板创建地图"><span class="post-toc-number">2.2.</span> <span class="post-toc-text">根据模板创建地图</span></a></li></ol></li></ol>
                             </div>
                         
                     
                     <article id="post-content">
                         <p>在<a href="https://pokon548.ink/2019/08/08/%E7%94%A8-Arcade-%E5%AD%A6%E4%B9%A0%E5%86%99%E4%B8%80%E6%AC%BE-RPG-%E6%B8%B8%E6%88%8F-%E2%80%94%E2%80%94-%E8%AE%A9%E4%B8%BB%E8%A7%92%E5%8A%A8%E8%B5%B7%E6%9D%A5">前一篇文章</a>中，我们学习了如何创建主人公，并让主人公动起来。<br>但是目前，主人公的周围还什么都没有。一款 RPG 游戏，众所周知，应该是有地图作为场景的吧！那好，我们今天就试着绘制场景，并让主人公能够与地图上的场景发生交互。</p>
 <h2 id="找到你之前的-Arcade-代码"><a href="#找到你之前的-Arcade-代码" class="headerlink" title="找到你之前的 Arcade 代码"></a>找到你之前的 Arcade 代码</h2><p>如果你之前曾经试着在编辑器界面里点击“主页”回到主界面的话，你可能会遇到这样一个弹窗：<br><img src="https://i.loli.net/2019/08/09/wZAgYvN5BVDsWet.png" alt="深度截图20190809135943.png"></p>
-<p>不知道当时的你，为你的第一个项目留下了怎样的名字呢？哈哈（跑远了）。不过这不是我们今天的重点，重点在于，我们今天的博文会用到上次的项目。你需要在主界面找到并点开它。<br>所有你之前创建过的项目（不论有没有显式要求 Arcade 保存），都能在 Arcade 主页中“我的项目”分栏下找到。为了方便后面找到你的项目，pokon548 强烈建议当 Arcade 弹出上面那个（示意图上）对话框时，给项目命一个名。对 pokon548 来说，为了方便写博文，给项目命了这么一个名。<br><img src="https://i.loli.net/2019/08/09/J1DmtFL5csnp2ik.png" alt="深度截图20190809140228.png"></p>
+<p>不知道当时的你，为你的第一个项目留下了怎样的名字呢？哈哈（跑远了）。不过这不是我们今天的重点，重点在于，我们今天的博文会用到上次的项目。你需要在主界面找到并点开它。<br>所有你之前创建过的项目（不论有没有显式要求 Arcade 保存），都能在 Arcade 主页中“我的项目”分栏下找到。为了方便后面找到你的项目，pokon548 强烈建议你当 Arcade 弹出上面那个（示意图上）对话框时，给项目命一个名。对 pokon548 来说，为了方便写博文，给项目命了这么一个名。<br><img src="https://i.loli.net/2019/08/09/J1DmtFL5csnp2ik.png" alt="深度截图20190809140228.png"></p>
 <p>为了打开你之前创建的项目，只需轻轻地点击对应的卡片即可。</p>
 <blockquote>
 <h4 id="不好！我一不小心创建了很多没用的项目"><a href="#不好！我一不小心创建了很多没用的项目" class="headerlink" title="不好！我一不小心创建了很多没用的项目"></a>不好！我一不小心创建了很多没用的项目</h4><p>因为一不小心创建了太多赘余的项目而导致真正的项目难以找到？不如把它们删除掉吧！<br>删除项目的方法也很简单。只需要点击“我的项目”，进入“我的项目”后选中你不需要的项目。最后，点击右上角出现的的“删除”按钮即可。<br><img src="https://i.loli.net/2019/08/09/n3lXuZ1CbtqA68Y.gif" alt="深度录屏Navigator20190809141107.gif"><br><strong>注意：项目的删除是永久性的。请务必确保你正打算删除的项目真的是你不需要的项目！</strong></p>
 </blockquote>
-<blockquote>
+<h2 id="游戏的场景"><a href="#游戏的场景" class="headerlink" title="游戏的场景"></a>游戏的场景</h2><p>为了给主人公互动的环境，Arcade 专门有一个分区来帮我们。其就叫做“场景”。<br><img src="https://i.loli.net/2019/08/09/tlhqy6jYSLmR4fu.png" alt="深度截图选择区域20190809141950.png"><br>通过创建场景，我们可以给主人公一个周围的环境。在这个环境下，主人公可以和场景互动、获得道具、讲述故事背景…许多剧情向游戏更是离不开场景的衬托。<br>当然，这篇教程的目的不在于写剧情向游戏，而只是一个 RPG 游戏教学。所以涉及到场景的内容 pokon548 点到为止，不过度展开。如果你对场景感兴趣，pokon548 欢迎你自主探索哦！</p>
+<h3 id="创建地图模板"><a href="#创建地图模板" class="headerlink" title="创建地图模板"></a>创建地图模板</h3><p>为了创建地图，我们首先需要一个蓝图。这个蓝图将指引 Arcade 在合适的地方放上合适的景物。<br>在 Arcade 中，蓝图由十六进制代码组成。自 0 ~ F　各表示一种景物。也就是说，在 Arcade 里，一个地图内最多只能包含十六种景物。<br>一定有人会说：哎只有十六种啊？其实不用担心。至于为什么，后面的文章里再说。<br>顺带提一句：在 Arcade 中，景物有一个对应的名词叫做“砖块”。地图有一个专有的名词叫做“tile map”。不过这并不重要，了解就好。</p>
+<p>要创建蓝图，我们首先要点击左侧的“场景”分区，把这个方块拖出来。<br><img src="https://i.loli.net/2019/08/09/GA3O47SI1KbpsXx.gif" alt="深度录屏Navigator20190809142937.gif"></p>
+<p>我们又见到了一个有灰色区域的方块了。和上次一样，点开它。<br><img src="https://i.loli.net/2019/08/09/5dcC1fghxiMeHun.png" alt="深度截图选择区域20190809143307.png"></p>
+<p>是不是很熟悉？我们上一篇文章中，在给主角弄皮肤的时候就用过它。我们这次绘制地图，还是要借助它的帮忙。不过我们这次不使用 Gallery 中的内容，而是自己手动绘制。<br>细心的你一定发现了一件事：编辑器的左下方有一个“尺寸”。就是 10x8 那个，你发现了吗？在当前的情况下，它的值决定了地图的大小。在博文中，我们就用 10x8 即可。当然爱探索的你，可以通过点它随意改变地图的大小。</p>
+<p>那么，我们要画个怎样的地图呢？唔…这可真是个充满创意的开放性问题。pokon548 的建议是：随便画！只要不把画面中间的格子占用了就好（为啥？因为主角默认情况下出现在中间啊）。</p>
+<p>为了方便演示，pokon548 决定就画个正方形出来。要在编辑器上画地图，只需要讲光标移动到编辑框上，点击你想要让其变为“砖块”的部分即可。<br><img src="https://i.loli.net/2019/08/09/USAk4QbgaIKwlEf.gif" alt="深度录屏选择区域20190809144034.gif"></p>
+<p>当然，好奇的你可能会问：我要是画错了怎么办？简单。在工具栏左侧有一个“橡皮擦”按钮，点一下它，即可激活“擦除模式”。之后，在你想要删除的像素上一点，就可以把画错的部分删去了。具体动图操作如下。<br><img src="https://i.loli.net/2019/08/09/Us2kl98IyoYzEhu.gif" alt="深度录屏选择区域20190809144327.gif"></p>
+<p>当你对你绘制的蓝图满意后，点一下下面蓝色的“完成”按钮保存更改。</p>
+<h3 id="根据模板创建地图"><a href="#根据模板创建地图" class="headerlink" title="根据模板创建地图"></a>根据模板创建地图</h3><blockquote>
 <p>未完待续…</p>
 </blockquote>
 
