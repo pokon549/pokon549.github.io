@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://pokon548.ink/"/>
-  <updated>2019-08-09T16:03:21.571Z</updated>
+  <updated>2019-08-10T04:51:26.931Z</updated>
   <id>https://pokon548.ink/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>用 Arcade 学习写一款 RPG 游戏 —— 与场景发生交互</title>
+    <link href="https://pokon548.ink/2019/08/10/%E7%94%A8-Arcade-%E5%AD%A6%E4%B9%A0%E5%86%99%E4%B8%80%E6%AC%BE-RPG-%E6%B8%B8%E6%88%8F-%E2%80%94%E2%80%94-%E4%B8%8E%E5%9C%BA%E6%99%AF%E5%8F%91%E7%94%9F%E4%BA%A4%E4%BA%92/"/>
+    <id>https://pokon548.ink/2019/08/10/用-Arcade-学习写一款-RPG-游戏-——-与场景发生交互/</id>
+    <published>2019-08-10T03:54:42.000Z</published>
+    <updated>2019-08-10T04:51:26.931Z</updated>
+    
+    <content type="html"><![CDATA[<p>在<a href="https://pokon548.ink/2019/08/09/%E7%94%A8-Arcade-%E5%AD%A6%E4%B9%A0%E5%86%99%E4%B8%80%E6%AC%BE-RPG-%E6%B8%B8%E6%88%8F-%E2%80%94%E2%80%94-%E7%BB%98%E5%88%B6%E5%9C%BA%E6%99%AF">上一篇文章</a>中，我们绘制了主人公周围的场景。不过为了推进游戏进度，我们还需要主人公能够与环境中的某些元素发生交互关系。那么，今天我们就来试试做出这个功能吧！</p><h2 id="找到上一章-Arcade-的代码"><a href="#找到上一章-Arcade-的代码" class="headerlink" title="找到上一章 Arcade 的代码"></a>找到上一章 Arcade 的代码</h2><p>之后的每一次博文，除非另有说明，都会使用到上一次遗留下的项目。请妥善保管好。那么，现在就在 Arcade 主页里找到并点开它吧！</p><h2 id="更多样化的地图"><a href="#更多样化的地图" class="headerlink" title="更多样化的地图"></a>更多样化的地图</h2><p>在上一次博文中，我们只在模板里用粉色构成了地图的模板。事实上，模板里最多可以容纳十六种颜色所对应的色块。不同的色块可以对应不同的材质和不同的功能。<br>在这一片博文中，为了示范，我们将用到绿色的新色块来增添一个“会和主角互动的小草（？？？）”。</p><h3 id="添加绿色色块"><a href="#添加绿色色块" class="headerlink" title="添加绿色色块"></a>添加绿色色块</h3><p>那么，我们先找到之前的地图模板，并点开它。<br><img src="https://i.loli.net/2019/08/10/EJ4de2uAiBXVsP7.gif" alt="深度录屏Navigator20190810120901.gif"></p><p>为了添加绿色色块，我们需要更换画笔的颜色，并在地图的某一个位置点上绿色色块。如之前那样，色块的位置是随意的。只要你不点在主角出现的位置（地图中央）就好。<br><img src="https://i.loli.net/2019/08/10/wnWfD3HIdMLoSha.gif" alt="深度录屏选择区域20190810121350.gif"></p><p>OK。点好了。别忘记点击“完成”保存模板。</p><h3 id="将绿色色块赋予小草的材质"><a href="#将绿色色块赋予小草的材质" class="headerlink" title="将绿色色块赋予小草的材质"></a>将绿色色块赋予小草的材质</h3><p>通过上一章的学习，这一步操作应该很简单了吧。就不再多说了。最后的结果应该和下图是一样的。<br><img src="https://i.loli.net/2019/08/10/UiKPtckdOo18fpz.png" alt="深度截图选择区域20190810121903.png"></p><p>然后，将其附加到粉色色块赋予材质的方块的后面。<br><img src="https://i.loli.net/2019/08/10/nZTAmHaOb1rS7Ep.gif" alt="深度录屏选择区域20190810122016.gif"></p><p>现在点击播放按钮看看，小草是不是出现了呢？<br><img src="https://i.loli.net/2019/08/10/Os2HL1K7iXEAgrv.png" alt="深度截图选择区域20190810122211.png"></p><h2 id="让小草能够与主人公互动"><a href="#让小草能够与主人公互动" class="headerlink" title="让小草能够与主人公互动"></a>让小草能够与主人公互动</h2><p>现在的小草，只是一个没有生气的材质而已。而我们想要实现的目标是：与主人公发生互动。<br>为了让小草能够与主人公互动，我们要先让 Arcade 能够检测到”主角靠近了小草“这一动作。</p><h3 id="检测靠近-——-当碰撞时"><a href="#检测靠近-——-当碰撞时" class="headerlink" title="检测靠近 —— 当碰撞时"></a>检测靠近 —— 当碰撞时</h3><p>检测碰撞这事在游戏里很常见。举个例子：在游戏中，如果来自敌方的子弹“碰”到了主人公的身上，游戏就会检测到这一行为，从而让主人公扣血或者 GG 等。这种事在设计类游戏中更是屡见不鲜。<br>当然，在这篇博文中，我们不会涉及到那么复杂的碰撞检测。pokon548 在初学期间，秉承“抓大放小”的原则：即在初学阶段先学好知识主干，细枝末节的东西等到学完了之后再快速补充就好。<br>说了那么多，我们先开始实践吧。</p><p>为了让 Arcade 能够检测到主人公靠近小草的动作，我们要在“场景”分区内找到这么一个方块，并将其拖出来。<br><img src="https://i.loli.net/2019/08/10/XQBGxDt2WoSk1bj.gif" alt="深度录屏选择区域20190810123013.gif"></p><p>这个方块看起来似乎更加复杂了。但是没关系，pokon548 下面的比较详细的介绍相信能让你明白它各个组成部分的重要作用。</p><h3 id="红色的“按钮”"><a href="#红色的“按钮”" class="headerlink" title="红色的“按钮”"></a>红色的“按钮”</h3><p>这代表着当碰撞事件发生之后，我们在这个方块内部可以引用到的精灵对象。不知道对象是什么？那好，这里稍微详细的介绍一下。<br>对象，在面向对象编程方法里，代表模板的实例。什么意思呢？就拿基因和生物之间的关系做比好了（虽然不是特别恰当，但是有助于你理解这一概念）。要产生生物，就必须要有基因作为生物的模板，通过一系列步骤，合成各种各样的蛋白质，最终组成了生物。在这里，生物就是基因的实例。基因本身虽然不是生物，但它定义好了生物的一切行为，是一个对象。<br>哈？还是不懂？没关系那就忽略吧。这不重要 :)。在这个简单的实例中，我们不会用到这个东西，无须过于担心。保持默认值就好。</p><h3 id="蓝色的“按钮”"><a href="#蓝色的“按钮”" class="headerlink" title="蓝色的“按钮”"></a>蓝色的“按钮”</h3><p>这代表着触发事件的精灵的类别。在这里，我们想要类别“玩家”去发生这一动作，故保持默认的“Player”类别即可。</p><h3 id="灰色的区域"><a href="#灰色的区域" class="headerlink" title="灰色的区域"></a>灰色的区域</h3><p>又见面了！在这个地方，它代表着能够和主人公发生互动的色块颜色。我们想要的是绿色色块代表的“小草”与主人公发生互动，故这里我们要将其改为绿色色块。<br>怎么操作？相信已经精通前一章的你知道怎么操作了吧！啥不知道？…好吧，再演示一遍。<del>记在小本本上了啊要考的</del><br><img src="https://i.loli.net/2019/08/10/SVzRsF7m5DQYvtu.gif" alt="深度录屏选择区域20190810124420.gif"></p><p>好了，这样 Arcade 就能检测到主人公靠近小草的这一行为了。</p><h2 id="将方块留在原地！不要拖"><a href="#将方块留在原地！不要拖" class="headerlink" title="将方块留在原地！不要拖"></a>将方块留在原地！不要拖</h2><p>你也许会说：哎接下来是不是要把这个方块拖动到绿色的“当开机时”方块里去啊？这就不对了。事实上，这个方块我们不需要拖动。留在原地就可以了。<br>为啥呢？其实只要原理讲明白你就懂了。还记得这个方块的动作是啥么？是“当主角碰到小草时，要…”。这个动作不是在开机时要完成的“初始化动作”，而是在<strong>游戏进行时</strong>会随时发生的事件。很显然，Arcade 完全不知道这个动作什么时候会发生，只能说是“如果发生了，就调用这个方块”。<br>故我们将其留在原地，不是没有道理。相反，很符合逻辑。</p><blockquote><p>未完待续…</p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;在&lt;a href=&quot;https://pokon548.ink/2019/08/09/%E7%94%A8-Arcade-%E5%AD%A6%E4%B9%A0%E5%86%99%E4%B8%80%E6%AC%BE-RPG-%E6%B8%B8%E6%88%8F-%E2%80%94
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>Kindle 这热更新有毒吧</title>
@@ -429,27 +450,6 @@
       
       
         &lt;p&gt;手机排版，排版较差，软件好货:-)&lt;br&gt;介绍：&lt;br&gt;Android N-ify是一款可以在Lollipop和Marshmallow设备上使用安卓N新特性的xposed模块，需要xposed框架支持。&lt;br&gt;系统要求：Lollipop+（Android 5.0+）&lt;br&gt;
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>无意翻到过去的HTC EVO 4G，纪念一下</title>
-    <link href="https://pokon548.ink/2016/06/07/%E6%97%A0%E6%84%8F%E7%BF%BB%E5%88%B0%E8%BF%87%E5%8E%BB%E7%9A%84HTC-EVO-4G%EF%BC%8C%E7%BA%AA%E5%BF%B5%E4%B8%80%E4%B8%8B/"/>
-    <id>https://pokon548.ink/2016/06/07/无意翻到过去的HTC-EVO-4G，纪念一下/</id>
-    <published>2016-06-07T06:22:34.000Z</published>
-    <updated>2016-06-07T06:22:34.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>据说前版主也用过（无意间看到蔡哥威武在htc evo 4g吧发的帖子）<br>刷的是早已被抛弃的cm7官方nightly，XDA发现好像有Android 4.4.4，不过不想再刷了，就这样吧。2.3的时代（其实一直想刷MIUI2.3，不过美国粉丝站挂了）<br>全球第一部4g手机，这才是HTC</p><p><img src="https://attach.bbs.miui.com/forum/201606/07/142116aicciu1icv11idiu.jpg.thumb.jpg" alt="图"></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;据说前版主也用过（无意间看到蔡哥威武在htc evo 4g吧发的帖子）&lt;br&gt;刷的是早已被抛弃的cm7官方nightly，XDA发现好像有Android 4.4.4，不过不想再刷了，就这样吧。2.3的时代（其实一直想刷MIUI2.3，不过美国粉丝站挂了）&lt;br&gt;全球第一部4
       
     
     </summary>
