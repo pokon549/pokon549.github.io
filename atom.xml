@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://pokon548.ink/"/>
-  <updated>2019-08-12T11:21:26.482Z</updated>
+  <updated>2019-08-12T11:35:42.733Z</updated>
   <id>https://pokon548.ink/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>码字也能如此 Awesome？这个列表能帮你</title>
+    <link href="https://pokon548.ink/2019/08/12/%E7%A0%81%E5%AD%97%E4%B9%9F%E8%83%BD%E5%A6%82%E6%AD%A4-Awesome%EF%BC%9F%E8%BF%99%E4%B8%AA%E5%88%97%E8%A1%A8%E8%83%BD%E5%B8%AE%E4%BD%A0/"/>
+    <id>https://pokon548.ink/2019/08/12/码字也能如此-Awesome？这个列表能帮你/</id>
+    <published>2019-08-12T11:27:54.000Z</published>
+    <updated>2019-08-12T11:35:42.733Z</updated>
+    
+    <content type="html"><![CDATA[<p>总觉得自己的码字技术不精，写出来的代码自己都不想维护？亦或者是总觉得码字是一个辛苦的活，没啥好的资源能帮你？这个列表可以帮你。</p><h2 id="囊括些啥内容？"><a href="#囊括些啥内容？" class="headerlink" title="囊括些啥内容？"></a>囊括些啥内容？</h2><p>截图说明一切～<br><img src="/img/hexo-lazyload.gif" data-original="https://i.loli.net/2019/08/12/lyeMbxoO3niRNTj.png" alt="深度截图20190812193015.png"><br><img src="/img/hexo-lazyload.gif" data-original="https://i.loli.net/2019/08/12/ksgDrpHE94AmCLo.png" alt="深度截图20190812192942.png"><br><img src="/img/hexo-lazyload.gif" data-original="https://i.loli.net/2019/08/12/CMQHJnXEuqsldUZ.png" alt="深度截图20190812193012.png"><br><img src="/img/hexo-lazyload.gif" data-original="https://i.loli.net/2019/08/12/AtRHGW7BTalPxim.png" alt="深度截图20190812193002.png"><br><img src="/img/hexo-lazyload.gif" data-original="https://i.loli.net/2019/08/12/ZAo2hwXb3qQmLz8.png" alt="深度截图20190812193008.png"><br><img src="/img/hexo-lazyload.gif" data-original="https://i.loli.net/2019/08/12/8oKwHYEFTbrVAgd.png" alt="深度截图20190812193020.png"><br><img src="/img/hexo-lazyload.gif" data-original="https://i.loli.net/2019/08/12/aNIhz6MS1K9AYoy.png" alt="深度截图20190812192953.png"><br><img src="/img/hexo-lazyload.gif" data-original="https://i.loli.net/2019/08/12/I6zDRUm7HojytYV.png" alt="深度截图20190812192958.png"><br><img src="/img/hexo-lazyload.gif" data-original="https://i.loli.net/2019/08/12/geaoFZMcpx8DitR.png" alt="深度截图20190812192949.png"><br><img src="/img/hexo-lazyload.gif" data-original="https://i.loli.net/2019/08/12/sa1JFZworI9Hv7M.png" alt="深度截图20190812193005.png"><br><img src="/img/hexo-lazyload.gif" data-original="https://i.loli.net/2019/08/12/F7ROTWCj9aS2eom.png" alt="深度截图20190812193026.png"><br><img src="/img/hexo-lazyload.gif" data-original="https://i.loli.net/2019/08/12/C9DUXS3L6aWqveP.png" alt="深度截图20190812193029.png"><br><img src="/img/hexo-lazyload.gif" data-original="https://i.loli.net/2019/08/12/sexncfVWbyB6NKr.png" alt="深度截图20190812193023.png"><br><img src="/img/hexo-lazyload.gif" data-original="https://i.loli.net/2019/08/12/oUeb1kgFyBQi8W5.png" alt="深度截图20190812193040.png"><br><img src="/img/hexo-lazyload.gif" data-original="https://i.loli.net/2019/08/12/z83tACGbFDpcUl2.png" alt="深度截图20190812193033.png"></p><p>怎么样？是不是囊括了好多你想要了解，但却苦于没有好的入口而没法开始的梦想？那么，现在就收藏这个 GitHub 项目，并为这个项目的作者点一个大大的 star 吧！:)</p><h2 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h2><p><a href="https://github.com/sindresorhus/awesome" target="_blank" rel="noopener">点我</a></p><h2 id="可是这么多东西，我要怎么找到我想要的呢"><a href="#可是这么多东西，我要怎么找到我想要的呢" class="headerlink" title="可是这么多东西，我要怎么找到我想要的呢"></a>可是这么多东西，我要怎么找到我想要的呢</h2><p>这个项目的作者给了一个搜索的链接：<a href="https://awesomelists.top/" target="_blank" rel="noopener">点我即可查看</a>。点击就可以搜索 Awesome 里面你想要的东西啦！<br>你觉得参考列表更好用一点？可以试试<a href="https://awesome-indexed.mathew-davies.co.uk/" target="_blank" rel="noopener">这个链接</a>。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;总觉得自己的码字技术不精，写出来的代码自己都不想维护？亦或者是总觉得码字是一个辛苦的活，没啥好的资源能帮你？这个列表可以帮你。&lt;/p&gt;
+&lt;h2 id=&quot;囊括些啥内容？&quot;&gt;&lt;a href=&quot;#囊括些啥内容？&quot; class=&quot;headerlink&quot; title=&quot;囊括些啥内容？
+      
+    
+    </summary>
+    
+    
+      <category term="探索微创新" scheme="https://pokon548.ink/tags/%E6%8E%A2%E7%B4%A2%E5%BE%AE%E5%88%9B%E6%96%B0/"/>
+    
+  </entry>
   
   <entry>
     <title>在线用基于 Official API 的开源版电报机</title>
@@ -433,28 +457,6 @@
       
         &lt;blockquote&gt;
 &lt;p&gt;虽然已经入手小米4了，但是新板块终究没有老区的情谊浓，所以我还是会常常会来看看的。&lt;br&gt;这是我原发在小米4板块的工具包，有兴趣的话去原帖支持我吧：&lt;a href=&quot;http://www.miui.com/forum.php?mo&quot; target=
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>杜比音效通用卡刷版 for android 4.3+</title>
-    <link href="https://pokon548.ink/2016/07/14/%E6%9D%9C%E6%AF%94%E9%9F%B3%E6%95%88%E9%80%9A%E7%94%A8%E5%8D%A1%E5%88%B7%E7%89%88-for-android-4-3/"/>
-    <id>https://pokon548.ink/2016/07/14/杜比音效通用卡刷版-for-android-4-3/</id>
-    <published>2016-07-14T13:57:08.000Z</published>
-    <updated>2016-07-14T13:57:08.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>内容无多说，懂的人都知道这货的音效震撼度（ ・∀・）</p><p>链接：<a href="http://forum.xda-developers.com/android/apps-games/mod-dolby-atmos-t3109446?cuid=AEAF93FF240C1AD138FF8885607C06BD|55079029600099&amp;timestamp=1468504485601&amp;_client_version=7.0.3" target="_blank" rel="noopener">http://forum.xda-developers.com/android/apps-games/mod-dolby-atmos-t3109446?cuid=AEAF93FF240C1AD138FF8885607C06BD|55079029600099&amp;timestamp=1468504485601&amp;_client_version=7.0.3</a></p><p><img src="/img/hexo-lazyload.gif" data-original="https://attach.bbs.miui.com/forum/201607/14/215717ofombqf1fsfyff1g.png.thumb.jpg" alt="图"></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;内容无多说，懂的人都知道这货的音效震撼度（ ・∀・）&lt;/p&gt;
-&lt;p&gt;链接：&lt;a href=&quot;http://forum.xda-developers.com/android/apps-games/mod-dolby-atmos-t3109446?cuid=AEAF93FF24
       
     
     </summary>
