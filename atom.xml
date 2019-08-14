@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://pokon548.ink/"/>
-  <updated>2019-08-12T14:43:48.531Z</updated>
+  <updated>2019-08-14T14:43:19.175Z</updated>
   <id>https://pokon548.ink/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>TensorFlow —— 开源机器学习框架</title>
+    <link href="https://pokon548.ink/2019/08/14/TensorFlow-%E2%80%94%E2%80%94-%E5%BC%80%E6%BA%90%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E6%A1%86%E6%9E%B6/"/>
+    <id>https://pokon548.ink/2019/08/14/TensorFlow-——-开源机器学习框架/</id>
+    <published>2019-08-14T14:41:13.000Z</published>
+    <updated>2019-08-14T14:43:19.175Z</updated>
+    
+    <content type="html"><![CDATA[<p>最近越来越忙了，可能之后相当长一段时间里不会再写博客。<br>不过，pokon548 最近发现了一款好玩简单的开源机器学习框架 —— TensorFlow。由 Google 制造。</p><h2 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h2><p>Python 版安装办法：<a href="https://tensorflow.google.cn/install/pip" target="_blank" rel="noopener">点我</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;最近越来越忙了，可能之后相当长一段时间里不会再写博客。&lt;br&gt;不过，pokon548 最近发现了一款好玩简单的开源机器学习框架 —— TensorFlow。由 Google 制造。&lt;/p&gt;
+&lt;h2 id=&quot;链接&quot;&gt;&lt;a href=&quot;#链接&quot; class=&quot;headerlin
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>码字也能如此 Awesome？这个列表能帮你</title>
@@ -435,28 +457,6 @@
       
       
         &lt;p&gt;在不久之前，Cyanogen公司创始人离职，不少人担忧着Cyanogen OS的命运。担心附属的CyanogenMod会受到影响。&lt;br&gt;好消息是，Cyanogen OS原开发成员成立了Linegae OS项目。开发人员正在全力紧张的开发中，预计将适配80款机子。&lt;br&gt;和
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>（适宜新手）便捷线刷工具 V0.1 by pokon 07/31</title>
-    <link href="https://pokon548.ink/2016/08/01/%EF%BC%88%E9%80%82%E5%AE%9C%E6%96%B0%E6%89%8B%EF%BC%89%E4%BE%BF%E6%8D%B7%E7%BA%BF%E5%88%B7%E5%B7%A5%E5%85%B7-V0-1-by-pokon-07-31/"/>
-    <id>https://pokon548.ink/2016/08/01/（适宜新手）便捷线刷工具-V0-1-by-pokon-07-31/</id>
-    <published>2016-08-01T07:59:13.000Z</published>
-    <updated>2016-08-01T07:59:13.000Z</updated>
-    
-    <content type="html"><![CDATA[<blockquote><p>虽然已经入手小米4了，但是新板块终究没有老区的情谊浓，所以我还是会常常会来看看的。<br>这是我原发在小米4板块的工具包，有兴趣的话去原帖支持我吧：<a href="http://www.miui.com/forum.php?mo" target="_blank" rel="noopener">http://www.miui.com/forum.php?mo</a> … 5082&amp;extra=page%3D9<br>建军节到了，祝所有已经脱坑/依旧坚守的米粉们，节日快乐:)<br><em>警告！本程序不支持9008线刷模式！！只支持fastboot模式！</em><br>本工具本身不含线刷必备的镜像文件，请到rom.xiaomi.cn下载。<br>写这个工具包的初衷：<br>考虑到众多小白不会线刷，太麻烦（相对而言），到手机店修反而被手机店坑之类的。<br>所以写了这个工具包。虽然写这个工具包麻烦了点，但是可以省去大量解答线刷疑问的时间呢。<br>一键执行，全程图形化操作，无需用户输入指令等等。方便各位新手救砖。希望大家喜欢:)</p></blockquote><p>相关事宜<br>大部分相关事宜已经全部写到执行脚本中，不在叙述。<br>解压程序包后，执行flash.bat即可查看所有关于执行这个程序的相关要求和须知问题。在真正执行刷机步骤前请确保相关要求达到并操作完毕。将线刷包的文件夹里面的文件放到flash文件夹里。<br>要单独说明的是，flash文件夹放置线刷包文件后看起来应该像这样：<br><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==" data-original="https://attach.bbs.miui.com/forum/201608/01/155550e0a2fwba1wo0wbza.png.thumb.jpg" alt="图"><br>一张图片表简单：（没错全程都是这么简单的按任意键，只要你键盘上有任意键可按⊙ω⊙）<br><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==" data-original="https://attach.bbs.miui.com/forum/201608/01/155600ek2p8hj9bem8wnwd.png.thumb.jpg" alt="图"><br>下载地址：<br><a href="http://pan.baidu.com/s/1eRKW4eA" target="_blank" rel="noopener">http://pan.baidu.com/s/1eRKW4eA</a></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;blockquote&gt;
-&lt;p&gt;虽然已经入手小米4了，但是新板块终究没有老区的情谊浓，所以我还是会常常会来看看的。&lt;br&gt;这是我原发在小米4板块的工具包，有兴趣的话去原帖支持我吧：&lt;a href=&quot;http://www.miui.com/forum.php?mo&quot; target=
       
     
     </summary>
